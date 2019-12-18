@@ -1,0 +1,27 @@
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.product {
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border: solid black 2px;
+    text-align: center;
+}
+
+.img-product {
+    width: 80%;
+}
+
+.desc-product {
+    font-family: 'Open Sans', sans-serif;
+}
