@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { products } from '../../assets/database/home-products.json';
 
 @Component({
   selector: 'app-product',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
+  productsHome;
+
   constructor() { }
 
+  
+
   ngOnInit() {
+    this.productsHome = products;
   }
 
 }

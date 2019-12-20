@@ -1,0 +1,39 @@
+{
+    "products" : [
+        {
+            "name" : "Camiseta Baby Look",
+            "image" : "../../assets/images/home/camiseta-dryfit.png",
+            "type" : "camiseta"
+        },
+        {
+            "name" : "Camiseta Baby Look",
+            "image" : "../../assets/images/home/camiseta-dryfit.png",
+            "type" : "camiseta"
+        },
+        {
+            "name" : "Camiseta Baby Look",
+            "image" : "../../assets/images/home/camiseta-dryfit.png",
+            "type" : "camiseta"
+        },
+        {
+            "name" : "Camiseta Baby Look",
+            "image" : "../../assets/images/home/camiseta-dryfit.png",
+            "type" : "camiseta"
+        },
+        {
+            "name" : "Camiseta Baby Look",
+            "image" : "../../assets/images/home/camiseta-dryfit.png",
+            "type" : "camiseta"
+        },
+        {
+            "name" : "Camiseta Baby Look",
+            "image" : "../../assets/images/home/camiseta-dryfit.png",
+            "type" : "camiseta"
+        },
+        {
+            "name" : "Camiseta Baby Look",
+            "image" : "../../assets/images/home/camiseta-dryfit.png",
+            "type" : "camiseta"
+        }
+    ]
+}

@@ -1,21 +1,7 @@
 
-<section class="product-container">
-
-    <p class="desc-product">CAMISETAS</p>
-
-
-    <div class="product">
-        <img src="../../assets/images/camiseta-dryfit.png" alt="foto camiseta" class="img-product"/>
-        <p class="desc-product">Camiseta Dryfit Unissex  - Personalizada</p>
-    </div>
-
-    <div class="product">
-        <img src="../../assets/images/camiseta-dryfit.png" alt="foto camiseta" class="img-product"/>
-        <p class="desc-product">Camiseta Dryfit Unissex  - Personalizada</p>
-    </div>
-
-    <div class="product">
-        <img src="../../assets/images/camiseta-dryfit.png" alt="foto camiseta" class="img-product"/>
-        <p class="desc-product">Camiseta Dryfit Unissex  - Personalizada</p>
+<section class="product-container" *ngIf="productsHome">
+    <div class="product" *ngFor="let product of productsHome">
+        <img src="{{product.image}}" alt="foto camiseta" class="img-product"/>
+        <p class="desc-product">{{product.name}}</p>
     </div>
 </section>

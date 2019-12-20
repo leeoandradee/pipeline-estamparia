@@ -1,10 +1,27 @@
-.banner-container {
-    margin-top: 3%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 767px) {
+
+    .banner-container {
+        margin-top: 3%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
 }
 
-.banner-image {
-    width: 100%;
+/*----------------------TABLET SCREEN----------------------*/
+@media screen and (min-width: 768px) {
+    .banner-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
 }

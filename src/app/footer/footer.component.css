@@ -1,64 +1,136 @@
-footer {
-    margin-top: 20px;
-    width: 100%;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
+@media screen and (max-width: 767px) {
+
+    footer {
+        margin-top: 20px;
+        width: 100%;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    #social-media-container {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    #social-media-text {
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #social-media-icons {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .social-media-icon {
+        width: 50px;
+    }
+
+    .footer-hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 80%;
+        color: black;
+    }
+
+    #information-container {
+        width: 85%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-content: center;
+        align-content: center;
+    }
+
+    #information-text {
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        font-style: italic;
+    }
+
+    #information-text-copy {
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+    }
 }
 
-#social-media-container {
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-}
+@media screen and (min-width: 768px) {
 
-#social-media-text {
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-}
+    footer {
+        margin-top: 20px;
+        width: 100%;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+    }
 
-#social-media-icons {
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-}
+    #social-media-container {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
 
-.social-media-icon {
-    width: 50px;
-}
+    #social-media-text {
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
 
-.footer-hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 80%;
-    color: black;
-}
+    #social-media-icons {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
 
-#information-container {
-    width: 85%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-content: center;
-    align-content: center;
-}
+    .social-media-icon {
+        width: 60px;
+    }
 
-#information-text {
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-}
+    .footer-hr {
+        display: none;
+    }
 
-#information-text-copy {
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
+    #information-container {
+        border-left: solid 1px black;
+        width: 85%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    #information-text {
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        font-style: italic;
+    }
+
+    #information-text-copy {
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+    }
 }
