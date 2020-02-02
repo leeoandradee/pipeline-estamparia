@@ -1,6 +1,7 @@
+<h1 class="product-title">Camisetas</h1>
 
 <section class="product-container" *ngIf="productsHome">
-    <div class="product" *ngFor="let product of productsHome">
+    <div class="product" *ngFor="let product of productsHome" (click)="showProduct(product.id, product.type)">
         <img src="{{product.image}}" alt="foto camiseta" class="img-product"/>
         <p class="desc-product">{{product.name}}</p>
     </div>

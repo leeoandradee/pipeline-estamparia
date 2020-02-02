@@ -10,8 +10,17 @@ export class MenuComponent implements OnInit {
   constructor() { }
 
   isOpen = false;
+  isMobileMenu = false;
 
   ngOnInit() {
+
+    var x = window.matchMedia("(max-width: 767px)")
+
+    if (x.matches) {
+      this.isMobileMenu = true;
+      console.log(this.isMobileMenu);
+    }
+
   }
 
   openMobileMenu() {
