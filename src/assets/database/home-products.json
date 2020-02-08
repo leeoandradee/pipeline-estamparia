@@ -13,7 +13,22 @@
             "image" : "../../assets/images/home/camiseta-dryfit.png",
             "description" : "",
             "type" : "camiseta"
+        },
+        {
+            "id" : "3",
+            "name" : "Caneca Simples",
+            "image" : "../../assets/images/home/caneca.jpg",
+            "description" : "",
+            "type" : "caneca"
+        },
+        {
+            "id" : "4",
+            "name" : "Caneca Coração",
+            "image" : "../../assets/images/home/caneca-coracao.png",
+            "description" : "",
+            "type" : "caneca"
         }
+
     ],
     "camiseta" : [
         {

@@ -1,0 +1,15 @@
+#payment-option-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+}
+
+.payment-icon {
+    width: 28%;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}

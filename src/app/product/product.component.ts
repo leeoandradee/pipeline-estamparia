@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as products from '../../assets/database/home-products.json';
 import { Router } from '@angular/router';
+import { ProductsService } from '../services/products.service.js';
 
 
 @Component({
@@ -14,6 +15,7 @@ export class ProductComponent implements OnInit {
 
   constructor(
     private router: Router,
+    private productsService: ProductsService,
   ) { }
 
   ngOnInit() {
@@ -27,11 +29,12 @@ export class ProductComponent implements OnInit {
     if (productList.default[productType] !== undefined) {
       productList.default[productType].forEach(product => {
         if (productId == product.id)
-          console.log(product.name);
+        console.log(product);
+        this.productsService.setData(product);
       });
     }
     
-    //this.router.navigate(['produtos']);
+    this.router.navigate(['produto']);
     //console.log(productName);
   }
 

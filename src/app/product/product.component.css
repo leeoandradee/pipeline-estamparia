@@ -23,6 +23,7 @@
         align-content: center;
         border: solid black 2px;
         text-align: center;
+        cursor: pointer;
     }
 
     .img-product {
@@ -56,8 +57,15 @@
         align-content: center;
         border: solid black 2px;
         text-align: center;
-        
+        cursor: pointer;
+        transition: transform .2s;
     }
+
+    .product:hover {
+        -ms-transform: scale(0.9); /* IE 9 */
+        -webkit-transform: scale(0.9); /* Safari 3-8 */
+        transform: scale(0.9); 
+      }
 
     .img-product {
         width: 80%;

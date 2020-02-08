@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductsService } from '../services/products.service';
 //import { products } from '../../assets/database/home-products.json';
 
 
@@ -9,10 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductInformationComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private productsService: ProductsService
+  ) { }
 
   ngOnInit() {
-
+    console.log(this.productsService.getData());
   }
 
 }
