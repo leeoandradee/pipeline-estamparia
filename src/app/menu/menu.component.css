@@ -46,9 +46,10 @@
         flex-direction: row;
         align-items: center;
         width: 100%;
-        margin-top: 2%;
+        padding-top: 2%;
         border-bottom: 2px solid whitesmoke;
         padding-bottom: 7px;
+        background-color: whitesmoke;
     }
 
 
@@ -75,7 +76,7 @@
 
     #menu-text {
         font-family: 'Open Sans', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
@@ -84,13 +85,15 @@
 
     #menu-list-desktop {
         margin: 0;
-        width: 70%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         align-items: center;
         align-content: center;
         list-style: none;
+        background-color: whitesmoke;
+        border-bottom: 1px solid grey;
     }
 
     #logo {
@@ -128,13 +131,15 @@
 
     #menu-list-desktop {
         margin: 0;
-        width: 60%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         align-items: center;
         align-content: center;
         list-style: none;
+        background-color: whitesmoke;
+        border-bottom: 1px solid grey;
     }
 
     #logo {
