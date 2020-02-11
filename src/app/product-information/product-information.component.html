@@ -3,11 +3,11 @@
 <section id="product-info">
     <section id="product-information-container">
         <div id="image-container">
-            <img class="image-product" src="../../assets/images/home/camiseta-dryfit.png"/>
+            <img class="image-product" src="{{product.image}}"/>
         </div>
         <div id="description-container">
-            <h2>Camiseta Polo</h2>
-            <p>Camisetas Reserva com estampas exclusivas da marca. Compostas de malha 100% algodão. Produção sob demanda. </p>
+            <h2>{{product.name}}</h2>
+            <p>{{product.description}}</p>
             <app-payment-option></app-payment-option>
             <button id="budget-button"><a id="budget-link" href="teste">FAZER ORÇAMENTO</a></button>
         </div>

@@ -12,6 +12,7 @@
         display: flex;
         justify-content: space-around;
         flex-direction: column;
+        margin-top: 30px;
     }
 
     #product-info {
@@ -54,9 +55,9 @@
         border-radius: 3px;
         border: 2px solid black;
         background-color: black;
-        transition: transform .2s;
         cursor: pointer;
     }
+    
 
     #product-info {
         width: 100%;
@@ -76,28 +77,29 @@
     }
     
     #budget-button:hover {
-        -ms-transform: scale(1.2); /* IE 9 */
-        -webkit-transform: scale(1.2); /* Safari 3-8 */
-        transform: scale(1.2); 
-      }
-    
+        background-color: #333;
+    }
+
     #budget-link {
         text-decoration: none;
         color: white;
         font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
     }
     
     h2 {
         font-family: 'Open Sans', sans-serif;
         margin: 0;
+        font-size: 1.5rem;
     }
     
     p {
         font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     #product-info {
         width: 100%;
         display: flex;
@@ -107,16 +109,17 @@
     }
 
     #product-information-container {
-        width: 80%;
+        width: 90%;
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         align-items: center;
         align-content: center;
+        margin-top: 40px;
     }
 
     #image-container {
-        width: 50%;
+        width: 40%;
     }
 
     .image-product {
@@ -127,7 +130,9 @@
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        width: 40%;
+        width: 60%;
+        border: 2px solid black;
+        padding: 15px;
     }
 
     #budget-button {
@@ -138,8 +143,11 @@
         border-radius: 3px;
         border: 2px solid black;
         background-color: black;
-        transition: transform .2s;
         cursor: pointer;
+    }
+
+    #budget-button:hover {
+        background-color: #333;
     }
 
     #product-info {
@@ -150,32 +158,100 @@
         align-content: center;
     }
     
-    #product-information-container {
-        width: 80%;
+    #budget-link {
+        text-decoration: none;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+    }
+    
+    h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #product-info {
+        width: 100%;
         display: flex;
-        justify-content: space-around;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
         align-content: center;
     }
-    
+
+    #product-information-container {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        margin-top: 40px;
+    }
+
+    #image-container {
+        width: 40%;
+    }
+
+    .image-product {
+        width: 100%;
+    }
+
+    #description-container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 30%;
+        border: 2px solid black;
+        padding: 54px;
+    }
+
+    #budget-button {
+        align-self: center;
+        margin-top: 10%;
+        padding: 10px;
+        width: 80%;
+        border-radius: 3px;
+        border: 2px solid black;
+        background-color: black;
+        cursor: pointer;
+    }
+
     #budget-button:hover {
-        -ms-transform: scale(1.2); /* IE 9 */
-        -webkit-transform: scale(1.2); /* Safari 3-8 */
-        transform: scale(1.2); 
-      }
+        background-color: #333;
+    }
+
+    #product-info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
     
     #budget-link {
         text-decoration: none;
         color: white;
         font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
     }
     
     h2 {
         font-family: 'Open Sans', sans-serif;
+        font-size: 2rem;
     }
     
     p {
         font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
     }
 }
+
+
+

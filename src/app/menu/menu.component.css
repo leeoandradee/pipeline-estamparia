@@ -83,17 +83,24 @@
 /*----------------------TABLET SCREEN----------------------*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
+    #menu-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: whitesmoke;
+        border-bottom: 1px solid grey;
+    }
+
     #menu-list-desktop {
         margin: 0;
-        width: 100%;
+        width: 70%;
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         align-items: center;
         align-content: center;
         list-style: none;
-        background-color: whitesmoke;
-        border-bottom: 1px solid grey;
+        padding-left: 0;
     }
 
     #logo {
@@ -129,17 +136,24 @@
 /*----------------------DESKTOP SCREEN----------------------*/
 @media screen and (min-width: 1024px) {
 
+    #menu-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: whitesmoke;
+        border-bottom: 1px solid grey;
+    }
+
     #menu-list-desktop {
         margin: 0;
-        width: 100%;
+        width: 70%;
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         align-items: center;
         align-content: center;
         list-style: none;
-        background-color: whitesmoke;
-        border-bottom: 1px solid grey;
+        padding-left: 0;
     }
 
     #logo {

@@ -1,9 +1,14 @@
 @media screen and (max-width: 767px) {
 
     footer {
-        margin-top: 20px;
         width: 100%;
         background-color: whitesmoke;
+        border-top: 1px solid grey;
+        margin-top: 20px;
+    }
+
+    #footer-container {
+        width: 100%;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -72,6 +77,13 @@
         margin-top: 20px;
         width: 100%;
         background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid grey;
+    }
+
+    #footer-container {
+        width: 70%;
         display: flex;
         justify-content: space-around;
         flex-direction: row;

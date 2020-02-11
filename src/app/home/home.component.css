@@ -1,5 +1,11 @@
 @media screen and (max-width: 767px) {
 
+    #banner-container-box {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
     .banner-container {
         width: 100%;
         display: flex;
@@ -14,8 +20,16 @@
 
 /*----------------------TABLET SCREEN----------------------*/
 @media screen and (min-width: 768px) {
-    .banner-container {
+    
+    #banner-container-box {
+        display: flex;
+        justify-content: center;
         width: 100%;
+        margin-top: 30px;
+    }
+    
+    .banner-container {
+        width: 70%;
         display: flex;
         justify-content: center;
     }

@@ -9,6 +9,7 @@ import { ProductInformationComponent } from './product-information/product-infor
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { PaymentOptionComponent } from './payment-option/payment-option.component';
+import { ProductsService } from './services/products.service';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { PaymentOptionComponent } from './payment-option/payment-option.componen
     AppRoutingModule
   ],
   providers: [
+    ProductsService
   ],
   bootstrap: [AppComponent]
 })

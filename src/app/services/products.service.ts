@@ -1,20 +1,29 @@
 import { Injectable } from '@angular/core';
+import { IProduct } from '../shared/model/product.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
 
-  constructor() { 
-  }
+  data = {
+    id : "",
+    name : "",
+    image : "",
+    description : "",
+    type : "",
+  };
 
-  private data: any;
+  constructor(){
+
+  };
 
   getData() {
+    console.log(this.data)
     return this.data;
   }
 
-  setData(data) {
+  setData(data: IProduct) {
     this.data = data;
   }
 }

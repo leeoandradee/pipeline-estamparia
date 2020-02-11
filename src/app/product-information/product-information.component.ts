@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../services/products.service';
+import { IProduct } from '../shared/model/product.model';
 //import { products } from '../../assets/database/home-products.json';
 
 
@@ -14,8 +15,11 @@ export class ProductInformationComponent implements OnInit {
     private productsService: ProductsService
   ) { }
 
+  product: IProduct;
+
   ngOnInit() {
-    console.log(this.productsService.getData());
+    window.scrollTo(0,0);
+    this.product = this.productsService.getData();
   }
 
 }
