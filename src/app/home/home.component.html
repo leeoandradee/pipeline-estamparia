@@ -1,9 +1,18 @@
 <app-menu></app-menu>
 
 <section id="banner-container-box">
-    <div class="banner-container">
-        <img class="banner-image" src="../assets/images/banner-camiseta.jpg"/>
-    </div>
+    <ngb-carousel>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img class="banner-image" src="../assets/images/banner-camiseta.jpg"/>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper ">
+                <img class="banner-image" src="../assets/images/banner-canecas.jpg" alt="Random second slide">
+            </div>
+        </ng-template>
+    </ngb-carousel>
 </section>
 
 <app-product></app-product>

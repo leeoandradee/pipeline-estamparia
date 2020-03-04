@@ -1,49 +1,67 @@
 {
-    "home" : [
-        {
-            "id" : "1",
-            "name" : "Camiseta Baby Look",
-            "image" : "../../assets/images/home/camiseta-dryfit.png",
-            "description" : "",
-            "type" : "camiseta"
-        },
-        {
-            "id" : "2",
-            "name" : "Camiseta Polo",
-            "image" : "../../assets/images/home/camiseta-dryfit.png",
-            "description" : "",
-            "type" : "camiseta"
-        },
-        {
-            "id" : "3",
-            "name" : "Caneca Simples",
-            "image" : "../../assets/images/home/caneca.jpg",
-            "description" : "",
-            "type" : "caneca"
-        },
-        {
-            "id" : "4",
-            "name" : "Caneca Coração",
-            "image" : "../../assets/images/home/caneca-coracao.png",
-            "description" : "",
-            "type" : "caneca"
-        }
-
-    ],
     "camiseta" : [
         {
             "id" : "1",
             "name" : "Camiseta Baby Look",
             "image" : "../../assets/images/home/camiseta-dryfit.png",
-            "description" : "",
-            "type" : "camiseta"
+            "description" : ""
         },
         {
             "id" : "2",
             "name" : "Camiseta Polo",
             "image" : "../../assets/images/home/camiseta-dryfit.png",
-            "description" : "",
-            "type" : "camiseta"
+            "description" : ""
+        },
+        {
+            "id" : "3",
+            "name" : "Camiseta Baby Look",
+            "image" : "../../assets/images/home/camiseta-dryfit.png",
+            "description" : ""
+        },
+        {
+            "id" : "4",
+            "name" : "Camiseta Polo",
+            "image" : "../../assets/images/home/camiseta-dryfit.png",
+            "description" : ""
+        },
+        {
+            "id" : "5",
+            "name" : "Camiseta Baby Look",
+            "image" : "../../assets/images/home/camiseta-dryfit.png",
+            "description" : ""
+        }
+
+    ],
+    "copo" : [
+        {
+            "id" : "1",
+            "name" : "Caneca Simples",
+            "image" : "../../assets/images/home/caneca.jpg",
+            "description" : ""
+        },
+        {
+            "id" : "2",
+            "name" : "Caneca Coração",
+            "image" : "../../assets/images/home/caneca-coracao.png",
+            "description" : ""
+        },
+        {
+            "id" : "3",
+            "name" : "Caneca Simples",
+            "image" : "../../assets/images/home/caneca.jpg",
+            "description" : ""
+        },
+        {
+            "id" : "4",
+            "name" : "Caneca Coração",
+            "image" : "../../assets/images/home/caneca-coracao.png",
+            "description" : ""
+        },
+        {
+            "id" : "5",
+            "name" : "Caneca Simples",
+            "image" : "../../assets/images/home/caneca.jpg",
+            "description" : ""
         }
     ]
 }

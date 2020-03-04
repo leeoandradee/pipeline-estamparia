@@ -3,5 +3,4 @@ export class IProduct {
     name : string;
     image : string;
     description : string;
-    type : string;
 }

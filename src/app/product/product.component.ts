@@ -12,7 +12,8 @@ import { IProduct } from '../shared/model/product.model.js';
 })
 export class ProductComponent implements OnInit {
 
-  productsHome;
+  camisetaProduct;
+  canecaProduct;
 
   constructor(
     private router: Router,
@@ -22,28 +23,36 @@ export class ProductComponent implements OnInit {
   product : IProduct;
 
   ngOnInit() {
-    this.productsHome = products.home;
+    this.camisetaProduct = products.camiseta;
+    this.canecaProduct = products.copo;
   }
 
   showProduct(productId: string, productType: string) {
-    var productListFile = JSON.stringify(products);
-    var productList = JSON.parse(productListFile);
-    if (productList.default[productType] !== undefined) {
-      productList.default[productType].forEach(product => {
-        if (productId == product.id) {
-          this.product  = {
-            id : product.id,
-            name : product.name,
-            image : product.image,
-            description : product.description,
-            type : product.type
-          }
-          this.productsService.setData(this.product);
-          console.log(this.productsService.getData());
-          this.router.navigate(['produto']);
-        }
-      });
+
+    switch(productType) {
+      case 'camiseta' :
+        this.selectProduct(this.camisetaProduct, productId);
+        break;
+      case 'caneca' :
+          this.selectProduct(this.camisetaProduct, productId);
+          break;
     }
+    this.productsService.setData(this.product);
+    console.log(this.productsService.getData());
+    this.router.navigate(['produto']);
+  }
+
+  selectProduct (list: Array<IProduct>, productId: string) {
+    list.forEach(product => {
+      if (productId == product.id) {
+        this.product  = {
+          id : product.id,
+          name : product.name,
+          image : product.image,
+          description : product.description,
+        }
+      }
+    });
   }
 
 }

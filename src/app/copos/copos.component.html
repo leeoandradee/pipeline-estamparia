@@ -1,0 +1,14 @@
+<app-menu></app-menu>
+
+<h1 class="product-title">Copos e canecas</h1>
+
+<section class="product-container-box" *ngIf="camisetaProduct">
+    <div class="product-container">
+        <div class="product" *ngFor="let product of camisetaProduct" (click)="showProduct(product.id, 'camiseta')">
+            <img src="{{product.image}}" alt="foto camiseta" class="img-product"/>
+            <p class="desc-product">{{product.name}}</p>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

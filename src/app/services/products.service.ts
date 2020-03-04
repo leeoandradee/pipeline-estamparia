@@ -11,7 +11,6 @@ export class ProductsService {
     name : "",
     image : "",
     description : "",
-    type : "",
   };
 
   constructor(){

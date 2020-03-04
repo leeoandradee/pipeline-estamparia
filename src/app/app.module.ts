@@ -10,6 +10,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { PaymentOptionComponent } from './payment-option/payment-option.component';
 import { ProductsService } from './services/products.service';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { CamisetasComponent } from './camisetas/camisetas.component';
+import { CoposComponent } from './copos/copos.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +22,14 @@ import { ProductsService } from './services/products.service';
     FooterComponent,
     ProductInformationComponent,
     HomeComponent,
-    PaymentOptionComponent
+    PaymentOptionComponent,
+    CamisetasComponent,
+    CoposComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [
     ProductsService
