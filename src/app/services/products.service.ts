@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
-import { IProduct } from '../shared/model/product.model';
+import { IProduct } from '../model/product.model';
+import * as productsHome from '../../assets/database/home-products.json';
+import * as camisetas from '../../assets/database/camisetas.json';
 
 @Injectable({
   providedIn: 'root'
@@ -8,21 +10,43 @@ export class ProductsService {
 
   data = {
     id : "",
-    name : "",
-    image : "",
-    description : "",
+    nome : "",
+    modelo : "",
+    tamanhos : "",
+    tecido : "",
+    sexo : "",
+    cores : "",
+    imagens : [""],
   };
 
   constructor(){
 
   };
 
-  getData() {
-    console.log(this.data)
-    return this.data;
+  getHomeProducts() {
+    console.log('Getting Home Products:');
+    return productsHome;
   }
 
-  setData(data: IProduct) {
-    this.data = data;
+  getProductByTypeAndId(productType, productId): IProduct {
+    switch(productType) {
+      case 'camisetas':
+        return this.getCamisetaById(productId);
+      default:
+        return null;
+    }
+  }
+
+  getCamisetaById(productId): IProduct {
+    let camisetaAux: IProduct;
+    console.log(camisetas.default.camiseta);
+    camisetas.default.camiseta.forEach(camiseta => {
+      if (camiseta.id === productId) {
+        console.log(camiseta);
+        camisetaAux = camiseta;
+        return;
+      }
+    });
+    return camisetaAux;
   }
 }

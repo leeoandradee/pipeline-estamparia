@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../services/products.service';
-import { IProduct } from '../shared/model/product.model';
-//import { products } from '../../assets/database/home-products.json';
+import { IProduct } from '../model/product.model';
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -11,15 +11,42 @@ import { IProduct } from '../shared/model/product.model';
 })
 export class ProductInformationComponent implements OnInit {
 
-  constructor(
-    private productsService: ProductsService
-  ) { }
-
+  orderObj: any;
+  productType: string;
+  productId: string;
   product: IProduct;
+
+  constructor(
+    private route: ActivatedRoute,
+    private productsService: ProductsService,
+  ) { }
 
   ngOnInit() {
     window.scrollTo(0,0);
-    this.product = this.productsService.getData();
+    this.getParams();
+    if(this.paramsIsOk()) {
+      this.product = this.productsService.getProductByTypeAndId(this.productType, this.productId);
+      console.log(this.product)
+      if(this.product === null) {
+        console.log('erro')
+      }
+    } else {
+      console.log('erro')
+    }
   }
 
+  getParams() {
+    this.route.queryParamMap.subscribe(params => {
+      this.orderObj = {...params.keys, ...params};
+    });
+    this.productType = this.orderObj.params.productType;
+    this.productId = this.orderObj.params.productId;
+  }
+
+  paramsIsOk() {
+    if(this.productType !== undefined && this.productId !== undefined && this.productType !== null && this.productId !== null) {
+      return true;
+    }
+    return false;
+  }
 }

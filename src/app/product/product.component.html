@@ -1,21 +1,11 @@
-<h1 class="product-title">Camisetas</h1>
-
-<section class="product-container-box" *ngIf="camisetaProduct">
-    <div class="product-container">
-        <div class="product" *ngFor="let product of camisetaProduct" (click)="showProduct(product.id, 'camiseta')">
-            <img src="{{product.image}}" alt="foto camiseta" class="img-product"/>
-            <p class="desc-product">{{product.name}}</p>
+<section *ngFor="let productType of products | keyvalue">
+    <h1 class="product-title">{{productType.key | uppercase}}</h1>
+    <section class="product-container-box">
+        <div class="product-container">
+            <div class="product" *ngFor="let product of productType.value" (click)="showProductInformation(product.id, productType.key)">
+                <img src="{{product.imagens[0]}}" alt="foto camiseta" class="img-product"/>
+                <p class="desc-product">{{product.nome}}</p>
+            </div>
         </div>
-    </div>
-</section>
-
-<h1 class="product-title">Copos e Canecas</h1>
-
-<section class="product-container-box" *ngIf="canecaProduct">
-    <div class="product-container">
-        <div class="product" *ngFor="let product of canecaProduct" (click)="showProduct(product.id, 'caneca')">
-            <img src="{{product.image}}" alt="foto camiseta" class="img-product"/>
-            <p class="desc-product">{{product.name}}</p>
-        </div>
-    </div>
+    </section>
 </section>

@@ -1,14 +1,23 @@
 <app-menu></app-menu>
 
-<h1 class="product-title">Camisetas</h1>
-
-<section class="product-container-box" *ngIf="camisetaProduct">
-    <div class="product-container">
-        <div class="product" *ngFor="let product of camisetaProduct" (click)="showProduct(product.id, 'camiseta')">
-            <img src="{{product.image}}" alt="foto camiseta" class="img-product"/>
-            <p class="desc-product">{{product.name}}</p>
-        </div>
+<section class="main-products">
+    <div class="products-content">
+        <h1 class="product-title">CAMISETAS</h1>
+        <section class="product-grid" *ngIf="camisetas">
+            <div class="product" *ngFor="let camiseta of camisetas" (click)="showProduct(camiseta.id, 'camiseta')">
+                <ngb-carousel>
+                    <ng-template ngbSlide *ngFor="let imagem of camiseta.imagens">
+                        <div class="picsum-img-wrapper">
+                            <img class="product-img" src="{{imagem}}"/>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+                <p class="product-name">{{camiseta.nome}}</p>
+            </div>
+        </section>
     </div>
 </section>
+
+
 
 <app-footer></app-footer>

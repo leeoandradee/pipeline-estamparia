@@ -8,7 +8,7 @@ import { CoposComponent } from './copos/copos.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'produto', component: ProductInformationComponent },
+  { path: 'produto-info', component: ProductInformationComponent },
   { path: 'camisetas', component: CamisetasComponent },
   { path: 'copos', component: CoposComponent },
 

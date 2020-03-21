@@ -2,12 +2,19 @@
 
 <section id="product-info">
     <section id="product-information-container">
-        <div id="image-container">
-            <img class="image-product" src="../../assets/images/home/camiseta-normal.jpeg"/>
-        </div>
+        <ngb-carousel interval="2000" [pauseOnHover]="true">
+            <ng-template ngbSlide *ngFor="let imagem of product.imagens">
+                <div class="picsum-img-wrapper">
+                    <img class="image-product" src="{{imagem}}"/>
+                </div>
+            </ng-template>
+        </ngb-carousel>
         <div id="description-container">
-            <h2>Camiseta Dryfit</h2>
-            <p>HAUIDHASUHDUASUHDIUSHADUDIHDIUHASIUDHSAIUHDASIUHDIUHDSIUHDIAUSH</p>
+            <h2><b>{{product.nome}}</b></h2>
+            <p>{{product.modelo}}</p>
+            <p>{{product.tamanhos}}</p>
+            <p>{{product.tecido}}</p>
+            <p>{{product.sexo}}</p>
             <app-payment-option></app-payment-option>
             <button id="budget-button"><a id="budget-link" href="teste">FAZER ORÇAMENTO</a></button>
         </div>

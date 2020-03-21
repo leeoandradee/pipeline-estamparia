@@ -1,0 +1,43 @@
+.main-products {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.products-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product-title {
+    margin-bottom: 2rem;
+}
+
+.product {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+.product-img {
+    width: 100%;
+}
+
+.product-name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
