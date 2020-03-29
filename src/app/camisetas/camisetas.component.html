@@ -1,10 +1,21 @@
+<ngx-spinner
+bdOpacity = 1.0
+bdColor = "#000000"
+size = "large"
+color = "#fff"
+type = "ball-clip-rotate"
+[fullScreen] = "true"
+>
+<p style="color: white" > carregando... </p>
+</ngx-spinner>
+
 <app-menu></app-menu>
 
 <section class="main-products">
     <div class="products-content">
         <h1 class="product-title">CAMISETAS</h1>
         <section class="product-grid" *ngIf="camisetas">
-            <div class="product" *ngFor="let camiseta of camisetas" (click)="showProduct(camiseta.id, 'camiseta')">
+            <div class="product" *ngFor="let camiseta of camisetas" (click)="showProductInformation(camiseta.id, 'camisetas')">
                 <ngb-carousel>
                     <ng-template ngbSlide *ngFor="let imagem of camiseta.imagens">
                         <div class="picsum-img-wrapper">

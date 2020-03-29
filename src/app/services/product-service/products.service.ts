@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { IProduct } from '../model/product.model';
-import * as productsHome from '../../assets/database/home-products.json';
-import * as camisetas from '../../assets/database/camisetas.json';
+import { IProduct } from '../../model/product.model';
+import * as productsHome from '../../../assets/database/home-products.json';
+import * as camisetas from '../../../assets/database/camisetas.json';
 
 @Injectable({
   providedIn: 'root'
@@ -39,8 +39,8 @@ export class ProductsService {
 
   getCamisetaById(productId): IProduct {
     let camisetaAux: IProduct;
-    console.log(camisetas.default.camiseta);
-    camisetas.default.camiseta.forEach(camiseta => {
+    console.log(camisetas.camiseta);
+    camisetas.camiseta.forEach(camiseta => {
       if (camiseta.id === productId) {
         console.log(camiseta);
         camisetaAux = camiseta;

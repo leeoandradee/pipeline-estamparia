@@ -141,6 +141,66 @@
                 "../../assets/images/camisetas/regata/masculina/redonda/regata-masculina-verde.jpg",
                 "../../assets/images/camisetas/regata/masculina/redonda/regata-masculina-laranja.jpg"
             ]
+        },
+        {
+            "id" : "11",
+            "nome" : "Básica Gola Careca Malha Fria",
+            "modelo" : "Gola Redonda Malha Fria",
+            "tamanhos" : "P ao EG",
+            "tecido" : "67% Poliester 33% Viscose",
+            "sexo" : "unisex",
+            "cores" : "Amarelo;Azul Turquesa;Azul Royal;Azul Marinho;Bordo;Branco;Cinza Mescla;Cinza Claro;Grafite;Laranja;Lilás;Marrom;Preto;Rosa BB;Rosa Chambinho;Rosa Pink;Roxo;Verde Bandeira;Verde Limão;Verde Musgo;Vermelho",
+            "imagens" : [
+                "../../assets/images/camisetas/basica-gola-careca/basica-gola-careca-malha-fria-azul.jpg",
+                "../../assets/images/camisetas/basica-gola-careca/basica-gola-careca-malha-fria-azul-marinho.jpg",
+                "../../assets/images/camisetas/basica-gola-careca/basica-gola-careca-malha-fria-cinza.jpg",
+                "../../assets/images/camisetas/basica-gola-careca/basica-gola-careca-malha-fria-preta.jpg"
+            ]
+        },
+        {
+            "id" : "12",
+            "nome" : "Básica Gola V Algodão",
+            "modelo" : "Gola V",
+            "tamanhos" : "P ao EG",
+            "tecido" : "100% Algodão",
+            "sexo" : "unisex",
+            "cores" : "Amarelo;Azul Turquesa;Azul Royal;Azul Marinho;Bordo;Branco;Cinza Mescla;Cinza Claro;Grafite;Laranja;Lilás;Marrom;Preto;Rosa BB;Rosa Chambinho;Rosa Pink;Roxo;Verde Bandeira;Verde Limão;Verde Musgo;Vermelho",
+            "imagens" : [
+                "../../assets/images/camisetas/gola-v-algodao/gola-v-algodao-azul.jpg",
+                "../../assets/images/camisetas/gola-v-algodao/gola-v-algodao-azul-bb.jpg",
+                "../../assets/images/camisetas/gola-v-algodao/gola-v-algodao-cinza.jpg",
+                "../../assets/images/camisetas/gola-v-algodao/gola-v-algodao-rosa.jpg"
+            ]
+        },
+        {
+            "id" : "13",
+            "nome" : "Camiseta Branca Poliéster",
+            "modelo" : "Básica Gola Redonda",
+            "tamanhos" : "P ao EG",
+            "tecido" : "100% Poliester",
+            "sexo" : "unisex",
+            "cores" : "Amarelo;Azul Turquesa;Azul Royal;Azul Marinho;Bordo;Branco;Cinza Mescla;Cinza Claro;Grafite;Laranja;Lilás;Marrom;Preto;Rosa BB;Rosa Chambinho;Rosa Pink;Roxo;Verde Bandeira;Verde Limão;Verde Musgo;Vermelho",
+            "imagens" : [
+                "../../assets/images/camisetas/branca-poliester/branca-poliester-1.jpg",
+                "../../assets/images/camisetas/branca-poliester/branca-poliester-2.jpg",
+                "../../assets/images/camisetas/branca-poliester/branca-poliester-3.jpg",
+                "../../assets/images/camisetas/branca-poliester/branca-poliester-4.jpg"
+            ]
+        },
+        {
+            "id" : "13",
+            "nome" : "Camiseta Polo Piquet Feminina",
+            "modelo" : "Piquet",
+            "tamanhos" : "P ao EG",
+            "tecido" : "50% Algodão, 50% Poliéster",
+            "sexo" : "feminina",
+            "cores" : "Amarelo;Azul Turquesa;Azul Royal;Azul Marinho;Bordo;Branco;Cinza Mescla;Cinza Claro;Grafite;Laranja;Lilás;Marrom;Preto;Rosa BB;Rosa Chambinho;Rosa Pink;Roxo;Verde Bandeira;Verde Limão;Verde Musgo;Vermelho",
+            "imagens" : [
+                "../../assets/images/camisetas/polo-piquet-feminina/polo-piquet-feminina-amrelo.jpg",
+                "../../assets/images/camisetas/polo-piquet-feminina/polo-piquet-feminina-azul-bb.jpg",
+                "../../assets/images/camisetas/polo-piquet-feminina/polo-piquet-feminina-rosa.jpg",
+                "../../assets/images/camisetas/polo-piquet-feminina/polo-piquet-feminina-salmao.jpg"
+            ]
         }
     ]
 }

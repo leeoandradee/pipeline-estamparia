@@ -32,6 +32,10 @@
     margin-bottom: 1rem;
 }
 
+.product:hover {
+    cursor: pointer;
+}
+
 .product-img {
     width: 100%;
 }

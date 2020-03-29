@@ -56,6 +56,15 @@
         border: 2px solid black;
         background-color: black;
         cursor: pointer;
+        text-decoration: none;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+    }
+
+    .btn-modal-confirm {
+        background-color: #343a40;
+        border: solid 1px black;
     }
     
 
@@ -78,13 +87,6 @@
     
     #budget-button:hover {
         background-color: #333;
-    }
-
-    #budget-link {
-        text-decoration: none;
-        color: white;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1rem;
     }
     
     h2 {
@@ -144,7 +146,20 @@
         border: 2px solid black;
         background-color: black;
         cursor: pointer;
+        text-decoration: none;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
     }
+
+    .btn-modal-confirm {
+        background-color: #343a40;
+        border: solid 1px black;
+        color: white;
+        border-radius: .25rem;
+        padding: .375rem .75rem;
+    }
+    
 
     #budget-button:hover {
         background-color: #333;
@@ -221,7 +236,20 @@
         border: 2px solid black;
         background-color: black;
         cursor: pointer;
+        text-decoration: none;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
     }
+
+    .btn-modal-confirm {
+        background-color: #343a40;
+        border: solid 1px black;
+        color: white;
+        border-radius: .25rem;
+        padding: .375rem .75rem;
+    }
+    
 
     #budget-button:hover {
         background-color: #333;

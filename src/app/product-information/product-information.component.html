@@ -1,3 +1,14 @@
+<ngx-spinner
+bdOpacity = 1.0
+bdColor = "#000000"
+size = "large"
+color = "#fff"
+type = "ball-clip-rotate"
+[fullScreen] = "true"
+>
+<p style="color: white" > carregando... </p>
+</ngx-spinner>
+
 <app-menu></app-menu>
 
 <section id="product-info">
@@ -11,15 +22,92 @@
         </ngb-carousel>
         <div id="description-container">
             <h2><b>{{product.nome}}</b></h2>
-            <p>{{product.modelo}}</p>
-            <p>{{product.tamanhos}}</p>
-            <p>{{product.tecido}}</p>
-            <p>{{product.sexo}}</p>
+            <p><b>Modelo: </b>{{product.modelo}}</p>
+            <p><b>Tamanhos: </b>{{product.tamanhos}}</p>
+            <p><b>Tecido: </b>{{product.tecido}}</p>
             <app-payment-option></app-payment-option>
-            <button id="budget-button"><a id="budget-link" href="teste">FAZER ORÇAMENTO</a></button>
+            <button id="budget-button" (click)="open(content)">FAZER ORÇAMENTO</button>
         </div>
     </section>
 </section>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Orçamento do pedido</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form [formGroup]="budgetForm">
+        <div class="form-group">
+            <label for="name">Nome *</label>
+            <div class="input-group">
+                <input type="text" id="name" class="form-control" [class.is-invalid] = "budgetForm.get('name').invalid && budgetForm.get('name').touched" placeholder="Ex: Maria" name="name" formControlName="name">
+            </div>
+            <div *ngIf="(name.invalid && name.touched) || name.dirty">
+                <small *ngIf="name.errors?.required" class="text-danger">O nome é obrigatório</small>
+                <!--question mark(?) is a safe navigation operator-->
+                <small *ngIf="name.errors?.pattern" class="text-danger">Nome inválido</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Sobrenome *</label>
+            <div class="input-group">
+                <input type="text" id="lastName" class="form-control" [class.is-invalid] = "budgetForm.get('lastName').invalid && budgetForm.get('lastName').touched" placeholder="Ex: Coutinho" name="lastName" formControlName="lastName">
+            </div>
+            <div *ngIf="(lastName.invalid && lastName.touched) || lastName.dirty">
+                <small *ngIf="lastName.errors?.required" class="text-danger">O sobrenome é obrigatório</small>
+                <!--question mark(?) is a safe navigation operator-->
+                <small *ngIf="lastName.errors?.pattern" class="text-danger">Sobrenome inválido</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email *</label>
+            <div class="input-group">
+                <input type="email" id="email" class="form-control" [class.is-invalid] = "budgetForm.get('email').invalid && budgetForm.get('email').touched" placeholder="nome@exemplo.com" name="nome" formControlName="email" >
+            </div>
+            <div *ngIf="(email.invalid && email.touched) || email.dirty">
+                <small *ngIf="email.errors?.required" class="text-danger">O email é obrigatório</small>
+                <!--question mark(?) is a safe navigation operator-->
+                <small *ngIf="email.errors?.pattern" class="text-danger">Email inválido</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="cellphone">Celular *</label>
+            <div class="input-group">
+                <input type="tel" id="cellphone" class="form-control" [class.is-invalid] = "budgetForm.get('cellphone').invalid && budgetForm.get('cellphone').touched" placeholder="Ex: (55) 55555-5555" name="cellphone" mask="(00) 00000-0000" formControlName="cellphone">
+            </div>
+            <div *ngIf="(cellphone.invalid && cellphone.touched) || cellphone.dirty">
+                <small *ngIf="cellphone.errors?.required" class="text-danger">O número de celular é obrigatório</small>
+                <!--question mark(?) is a safe navigation operator-->
+                <small *ngIf="cellphone.errors?.pattern" class="text-danger">Número de celular inválido</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="cep">CEP *</label>
+            <div class="input-group">
+                <input type="cep" id="cep" class="form-control" [class.is-invalid] = "budgetForm.get('cep').invalid && budgetForm.get('cep').touched" placeholder="Ex: 55555-555" name="cep" mask="00000-000" formControlName="cep">
+            </div>
+            <div *ngIf="(cep.invalid && cep.touched) || cep.dirty">
+                <small *ngIf="cep.errors?.required" class="text-danger">O CEP é obrigatório</small>
+                <!--question mark(?) is a safe navigation operator-->
+                <small *ngIf="cep.errors?.pattern" class="text-danger">CEP inválido</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="notes">Notas do pedido (Opcional)</label>
+            <div class="input-group">
+                <textarea rows="10" cols="30" maxlength="100" id="dateOfBirth" class="form-control" placeholder="" name="nome" formControlName="notes"></textarea>
+            </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" ngbAutofocus class="btn-modal-confirm" (click)="modal.close('Ok click')" [disabled]="budgetForm.invalid">confirmar</button>
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">cancelar</button>
+    </div>
+  </ng-template>
 
 <app-product></app-product>
 
