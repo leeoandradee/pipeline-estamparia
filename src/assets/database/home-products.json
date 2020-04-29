@@ -4,142 +4,249 @@
             "id" : "1",
             "nome" : "Camiseta Básica",
             "modelo" : "Gola Careca",
-            "tamanhos" : "P ao EGG",
+            "tamanhos" : ["P","M","G","EG"],
             "tecido" : "100% Algodão",
             "sexo" : "unisex",
-            "cores" : "Amarelo;Azul Turquesa;Azul Royal;Azul Marinho;Bordo;Branco;Cinza Mescla;Cinza Claro;Grafite;Laranja;Lilás;Marrom;Preto;Rosa BB;Rosa Chambinho;Rosa Pink;Roxo;Verde Bandeira;Verde Limão;Verde Musgo;Vermelho.",
+            "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "../../assets/images/camisetas/basica/basica.jpg"
+                "assets/images/camisetas/camisetas-basica/camiseta-basica-azul-marinho.png",
+                "assets/images/camisetas/camisetas-basica/camiseta-basica-cinza-mescla.png",
+                "assets/images/camisetas/camisetas-basica/camiseta-basica-marrom.png",
+                "assets/images/camisetas/camisetas-basica/camiseta-basica-verde-limão.jpg", 
+                "assets/images/camisetas/camisetas-basica/camiseta-basica-verde-musgo.png", 
+                "assets/images/camisetas/camisetas-basica/camiseta-basica-vinho.png",
+                "assets/images/camisetas/camisetas-basica/camiseta-basica-cores.png" 		 
+
             ]
         },
         {
             "id" : "2",
             "nome" : "Camiseta Básica Gola V Malha Fria",
             "modelo" : "Gola V",
-            "tamanhos" : "P ao EGG",
+            "tamanhos" : ["P","M","G","EG"],
             "tecido" : "67% Poliéster, 33% Viscose",
             "sexo" : "unisex",
-            "cores" : "Amarelo;Azul Royal;Azul Marinho;Branco;Cinza Mescla;Laranja;Preto;Verde Musgo;Vermelho.",
+            "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "../../assets/images/camisetas/gola-v/gola-v-amarela.jpg",
-                "../../assets/images/camisetas/gola-v/gola-v-laranja.jpg",
-                "../../assets/images/camisetas/gola-v/gola-v-verde.jpg",
-                "../../assets/images/camisetas/gola-v/gola-v-vermelha.jpg"
+                "assets/images/camisetas/gola-v/gola-v-amarela.jpg",
+                "assets/images/camisetas/gola-v/gola-v-laranja.jpg",
+                "assets/images/camisetas/gola-v/gola-v-verde.jpg",
+                "assets/images/camisetas/gola-v/gola-v-vermelha.jpg"
             ]
         },
         {
             "id" : "3",
             "nome" : "Camiseta Básica Infantil e Juvenil",
-            "modelo" : "",
-            "tamanhos" : "",
-            "tecido" : "",
+            "modelo" : "Gola Careca",
+            "tamanhos" : ["0","8","10","16"],
+            "tecido" : "100% algodão",
             "sexo" : "unisex",
-            "cores" : "",
+            "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "../../assets/images/camisetas/basica-juvenil/basica-juvenil-laranja.jpg",
-                "../../assets/images/camisetas/basica-juvenil/basica-juvenil-rosa.jpg",
-                "../../assets/images/camisetas/basica-juvenil/basica-juvenil-rosa-claro.jpg"
+                "assets/images/camisetas/basica-juvenil/basica-juvenil-laranja.jpg",
+                "assets/images/camisetas/basica-juvenil/basica-juvenil-rosa.jpg",
+                "assets/images/camisetas/basica-juvenil/basica-juvenil-rosa-claro.jpg"
             ]
         },
         {
             "id" : "4",
             "nome" : "Camiseta Polo Piquet Masculina",
             "modelo" : "Piquet",
-            "tamanhos" : "P ao EG",
+            "tamanhos" : ["P","M","G","EG"],
             "tecido" : "50% Algodão, 50% Poliéster",
             "sexo" : "masculino",
-            "cores" : "Amarelo;Azul Turquesa;Azul Royal;Azul Marinho;Bordo;Branco;Cinza Mescla;Cinza Claro;Grafite;Laranja;Lilás;Marrom;Preto;Rosa BB;Rosa Chambinho;Rosa Pink;Roxo;Verde Bandeira;Verde Limão;Verde Musgo;Vermelho.",
+            "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "../../assets/images/camisetas/polo-piquet/masculina/polo-piquet-laranja.jpg",
-                "../../assets/images/camisetas/polo-piquet/masculina/polo-piquet-azul.jpg",
-                "../../assets/images/camisetas/polo-piquet/masculina/polo-piquet-verde.jpg",
-                "../../assets/images/camisetas/polo-piquet/masculina/polo-piquet-vermelha.jpg"
+                "assets/images/camisetas/polo-piquet/masculina/polo-piquet-laranja.jpg",
+                "assets/images/camisetas/polo-piquet/masculina/polo-piquet-azul.jpg",
+                "assets/images/camisetas/polo-piquet/masculina/polo-piquet-verde.jpg",
+                "assets/images/camisetas/polo-piquet/masculina/polo-piquet-vermelha.jpg"
             ]
         },
         {
             "id" : "5",
             "nome" : "Camiseta Polo Piquet Feminina",
             "modelo" : "Piquet",
-            "tamanhos" : "P ao EG",
+            "tamanhos" : ["P","M","G","EG"],
             "tecido" : "50% Algodão, 50% Poliéster",
             "sexo" : "feminina",
-            "cores" : "Amarelo;Azul Turquesa;Azul Royal;Azul Marinho;Bordo;Branco;Cinza Mescla;Cinza Claro;Grafite;Laranja;Lilás;Marrom;Preto;Rosa BB;Rosa Chambinho;Rosa Pink;Roxo;Verde Bandeira;Verde Limão;Verde Musgo;Vermelho.",
+            "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "../../assets/images/camisetas/polo-piquet/feminina/polo-piquet-feminina-salmao.jpg",
-                "../../assets/images/camisetas/polo-piquet/feminina/polo-piquet-feminina-amarela.jpg",
-                "../../assets/images/camisetas/polo-piquet/feminina/polo-piquet-feminina-azul.jpg",
-                "../../assets/images/camisetas/polo-piquet/feminina/polo-piquet-feminina-rosa.jpg"
+                "assets/images/camisetas/polo-piquet/feminina/polo-piquet-feminina-salmao.jpg",
+                "assets/images/camisetas/polo-piquet/feminina/polo-piquet-feminina-amarela.jpg",
+                "assets/images/camisetas/polo-piquet/feminina/polo-piquet-feminina-azul.jpg",
+                "assets/images/camisetas/polo-piquet/feminina/polo-piquet-feminina-rosa.jpg"
+            ]
+        }
+    ],
+    "copos" : [
+        {
+            "id": "1",
+            "nome": "Copo Long Drink",
+            "cores": {
+                "degrade": [
+                    "Branco com Laranja",
+                    "Branco Com Verde",
+                    "Branco com Azul",
+                    "Branco com Roxo",
+                    "Branco com Amarelo",
+                    "Branco com Vermelho",
+                    "Branco com Preto",
+                    " Transparente com Laranja",
+                    "Transparente Com Verde",
+                    "Transparente com Azul",
+                    "Transparente com Roxo",
+                    "Transparente com Amarelo",
+                    "Transparente com Vermelho",
+                    "Transparente com Preto",
+                    "Jateado com Laranja",
+                    "Jateado Com Verde",
+                    "Jateado com Azul",
+                    "Jateado com Roxo",
+                    "Jateado com Amarelo",
+                    "Jateado com Vermelho",
+                    "Jatedo com Preto,"
+                ],
+                "leitosas": [
+                    "Amarelo",
+                    "Vermelho",
+                    "Branco",
+                    "Branco Pérola",
+                    "Azul claro",
+                    "Dourado",
+                    "Verde",
+                    "Prata",
+                    "Laranja",
+                    "Vermelho",
+                    "rosa",
+                    "Pink",
+                    "Azul Escuro",
+                    "preto",
+                    "Tiffany"
+                ],
+                "metalica": [
+                    "Dourado",
+                    "Prata"
+                ],
+                "neon": [
+                    "verde",
+                    "Laranja",
+                    "Rosa",
+                    "azul",
+                    "Roxo"
+                ],
+                "translucida": [
+                    "Vermelho",
+                    "Verde",
+                    "Amarelo",
+                    "Transparente"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/copos-long-drink/long-drink-combordas.jpg",
+                "assets/images/copos/copos-long-drink/long-drink-leitosos.jpg",
+                "assets/images/copos/copos-long-drink/long-drink-degrade.jpg",
+                "assets/images/copos/copos-long-drink/long-drink-metalizados.jpg",
+                "assets/images/copos/copos-long-drink/long-drink-neon.jpg",
+                "assets/images/copos/copos-long-drink/long-drink-translucidos.jpg"
             ]
         },
         {
-            "id" : "6",
-            "nome" : "Camiseta Baby Look Gola Redonda",
-            "modelo" : "Gola Redonda",
-            "tamanhos" : "P ao EG",
-            "tecido" : "100% Algodão",
-            "sexo" : "unisex",
-            "cores" : "Amarelo;Azul Turquesa;Azul Royal;Azul Marinho;Bordo;Branco;Cinza Mescla;Cinza Claro;Grafite;Laranja;Lilás;Marrom;Preto;Rosa BB;Rosa Chambinho;Rosa Pink;Roxo;Verde Bandeira;Verde Limão;Verde Musgo;Vermelho.",
-            "imagens" : [
-                "../../assets/images/camisetas/baby-look/redonda/baby-look-gola-redonda-amarela.jpg",
-                "../../assets/images/camisetas/baby-look/redonda/baby-look-gola-redonda-preta.jpg",
-                "../../assets/images/camisetas/baby-look/redonda/baby-look-gola-redonda-roxo.jpg",
-                "../../assets/images/camisetas/baby-look/redonda/baby-look-gola-redonda-salmao.jpg"
+            "id": "2",
+            "nome": "Copito 190ml",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Rosa",
+                    "Branco",
+                    "Preto",
+                    "Azul",
+                    "Vermelho"
+                ],
+                "metalica": [],
+                "neon": [],
+                "translucida": [
+                    "Transparete"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/copito/copito-azul.jpg",
+                "assets/images/copos/copito/copito-amarelo.jpg",
+                "assets/images/copos/copito/copito-cores.jpg",
+                "assets/images/copos/copito/copito-transparente.jpg"
             ]
         },
         {
-            "id" : "7",
-            "nome" : "Camiseta Baby Look Gola Redonda",
-            "modelo" : "Gola V",
-            "tamanhos" : "P ao EG",
-            "tecido" : "100% Algodão",
-            "sexo" : "unisex",
-            "cores" : "Amarelo;Azul Turquesa;Azul Royal;Azul Marinho;Bordo;Branco;Cinza Mescla;Cinza Claro;Grafite;Laranja;Lilás;Marrom;Preto;Rosa BB;Rosa Chambinho;Rosa Pink;Roxo;Verde Bandeira;Verde Limão;Verde Musgo;Vermelho",
-            "imagens" : [
-                "../../assets/images/camisetas/baby-look/v/baby-look-gola-v-azul.jpg",
-                "../../assets/images/camisetas/baby-look/v/baby-look-gola-v-salmao.jpg",
-                "../../assets/images/camisetas/baby-look/v/baby-look-gola-v-vermelho.jpg"
+            "id": "3",
+            "nome": "Copo Bucks 400ml ",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Rosa",
+                    "Branco",
+                    "Preto",
+                    "Azul",
+                    "Vermelho"
+                ],
+                "metalica": [],
+                "neon": [],
+                "translucida": []
+            },
+            "imagens": [
+                "assets/images/copos//copo-bucks/copo-bucks-branco.png",
+                "assets/images/copos//copo-bucks/copo-bucks-cores.png",
+                "assets/images/copos//copo-bucks/copo-bucks-preto.png"
             ]
         },
         {
-            "id" : "8",
-            "nome" : "Camiseta Manga Longa",
-            "modelo" : "Gola Careca",
-            "tamanhos" : "P ao EG",
-            "tecido" : "100% Algodão",
-            "sexo" : "unisex",
-            "cores" : "Amarelo;Azul Marinho;Azul Royal;Azul Turquesa;Branco;Cinza Claro;Cinza Mescla;Laranja;Grafite;Vermelho;Verde Limão;Verde Musgo;Verde Bandeira;Preto",
-            "imagens" : [
-                "../../assets/images/camisetas/manga-longa/manga-longa-vermelho.jpg",
-                "../../assets/images/camisetas/manga-longa/manga-longa-azul.jpg",
-                "../../assets/images/camisetas/manga-longa/manga-longa-verde.jpg"
+            "id": "4",
+            "nome": "Copo Chantily 500ml e 700ml",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Branco",
+                    "Preto"
+                ],
+                "metalica": [],
+                "neon": [
+                    "Verde",
+                    "Laranja",
+                    "rosa",
+                    "Azul",
+                    "Roxo"
+                ],
+                "translucida": [
+                    "Vermelho",
+                    "Amarelo",
+                    "Transparente"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/copo-chantily/copo-chantily-leitosos.jpg",
+                "assets/images/copos/copo-chantily/copo-chantily-translucidos.jpg"
             ]
         },
         {
-            "id" : "9",
-            "nome" : "Regata Infantil",
-            "modelo" : "Gola Redonda",
-            "tamanhos" : "0 ao 8",
-            "tecido" : "100% Algodão",
-            "sexo" : "unisex",
-            "cores" : "Amarelo;Azul Turquesa;Azul Royal;Azul Marinho;Bordo;Branco;Cinza Mescla;Cinza Claro;Grafite;Laranja;Lilás;Marrom;Preto;Rosa BB;Rosa Chambinho;Rosa Pink;Roxo;Verde Bandeira;Verde Limão;Verde Musgo;Vermelho",
-            "imagens" : [
-                "../../assets/images/camisetas/regata/infantil/regata-infantil-amarela.jpg",
-                "../../assets/images/camisetas/regata/infantil/regata-infantil-azul.jpg",
-                "../../assets/images/camisetas/regata/infantil/regata-infantil-vermelha.jpg"
-            ]
-        },
-        {
-            "id" : "10",
-            "nome" : "Regata Masculina",
-            "modelo" : "Gola Redonda",
-            "tamanhos" : "P ao EG",
-            "tecido" : "100% Algodão",
-            "sexo" : "masculino",
-            "cores" : "Amarelo;Azul Turquesa;Azul Royal;Azul Marinho;Bordo;Branco;Cinza Mescla;Cinza Claro;Grafite;Laranja;Lilás;Marrom;Preto;Rosa BB;Rosa Chambinho;Rosa Pink;Roxo;Verde Bandeira;Verde Limão;Verde Musgo;Vermelho",
-            "imagens" : [
-                "../../assets/images/camisetas/regata/masculina/redonda/regata-masculina-vermleha.jpg",
-                "../../assets/images/camisetas/regata/masculina/redonda/regata-masculina-verde.jpg",
-                "../../assets/images/camisetas/regata/masculina/redonda/regata-masculina-laranja.jpg"
+            "id": "5",
+            "nome": "Copinho Shot 70ml Com tampa e sem Tampa  ",
+            "cores": {
+                "degrade": [],
+                "leitosas": [],
+                "metalica": [],
+                "neon": [
+                    "Verde",
+                    "Laranja",
+                    "rosa"
+                ],
+                "translucida": [
+                    "Vermelho",
+                    "Azul",
+                    "Transparente"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/copinho-shot/copinho-shot.png",
+                "assets/images/copos/copinho-shot/copinho-cores.png"
             ]
         }
     ]

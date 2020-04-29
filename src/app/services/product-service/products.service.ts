@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { IProduct } from '../../model/product.model';
 import * as productsHome from '../../../assets/database/home-products.json';
 import * as camisetas from '../../../assets/database/camisetas.json';
+import * as copos from '../../../assets/database/copos.json';
+import { ICopo } from 'src/app/model/copo.model';
 
 @Injectable({
   providedIn: 'root'
@@ -12,10 +14,10 @@ export class ProductsService {
     id : "",
     nome : "",
     modelo : "",
-    tamanhos : "",
+    tamanhos : [""],
     tecido : "",
     sexo : "",
-    cores : "",
+    cores : [""],
     imagens : [""],
   };
 
@@ -28,10 +30,12 @@ export class ProductsService {
     return productsHome;
   }
 
-  getProductByTypeAndId(productType, productId): IProduct {
+  getProductByTypeAndId(productType, productId): any {
     switch(productType) {
       case 'camisetas':
         return this.getCamisetaById(productId);
+      case 'copos':
+        return this.getCopoById(productId);
       default:
         return null;
     }
@@ -39,7 +43,7 @@ export class ProductsService {
 
   getCamisetaById(productId): IProduct {
     let camisetaAux: IProduct;
-    console.log(camisetas.camiseta);
+    console.log(copos);
     camisetas.camiseta.forEach(camiseta => {
       if (camiseta.id === productId) {
         console.log(camiseta);
@@ -48,5 +52,18 @@ export class ProductsService {
       }
     });
     return camisetaAux;
+  }
+
+  getCopoById(productId): ICopo {
+    let copoAux: ICopo;
+    copos.copo.forEach(copoI => {
+      console.log("COPO é:  " + copoI)
+      if (copoI.id === productId) {
+        console.log(copoI);
+        copoAux = copoI;
+        return;
+      }
+    });
+    return copoAux;
   }
 }

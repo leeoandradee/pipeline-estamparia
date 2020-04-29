@@ -1,0 +1,41 @@
+<owl-carousel [options]="SlideOptionsShirt" [carouselClasses]="['owl-theme', 'sliding']" id="image-container"> 
+    <div *ngFor="let imagem of camiseta.imagens"> 
+        <img src="{{imagem}}" alt="foto camiseta" class="img-product"/>
+    </div>
+</owl-carousel>  
+
+<div id="description-container">
+    <h2><b>{{camiseta.nome}}</b></h2>
+    <div class="product-info" attr.aria-label="Modelo {{camiseta.modelo}}">
+        <p class="product-info-title" aria-hidden="true"><b>Modelo</b></p>
+        <p class="product-info-value" aria-hidden="true">{{camiseta.modelo}}</p>
+    </div>
+    <div class="product-info" attr.aria-label="Modelo {{camiseta.modelo}}">
+        <p class="product-info-title" aria-hidden="true"><b>Tecido</b></p>
+        <p class="product-info-value-last" aria-hidden="true">{{camiseta.tecido}}</p>
+    </div>
+    <form [formGroup]="productForm">
+        <section id="size-color-container">
+            <div class="size-color-group">   
+                <label for="cars"><b>Cor</b></label>
+                <select name="cor" class="size-color-options" formControlName="cor" [class.is-invalid-select] = "productForm.get('cor').invalid && productForm.get('cor').touched">       
+                    <option value="">-</option>                                   
+                    <option value="{{cor}}" *ngFor="let cor of camiseta.cores">{{cor}}</option>                      
+                </select>
+                <div *ngIf="(cor.invalid && cor.touched) || cor.dirty">
+                    <small *ngIf="cor.errors?.required" class="text-danger">A cor da camiseta é obrigatório</small>
+                </div>
+            </div>
+            <div class="size-color-group">   
+                <label for="tamanho"><b>Tamanho</b></label>
+                <select name="tamanho" class="size-color-options" formControlName="tamanho" [class.is-invalid-select] = "productForm.get('tamanho').invalid && productForm.get('tamanho').touched">       
+                    <option value="">-</option>
+                    <option value="{{tamanho}}" *ngFor="let tamanho of camiseta.tamanhos">{{tamanho}}</option>
+                </select>
+                <div *ngIf="(tamanho.invalid && tamanho.touched) || tamanho.dirty">
+                    <small *ngIf="tamanho.errors?.required" class="text-danger">O tamanho da camiseta é obrigatório</small>
+                </div>
+            </div>
+        </section>
+    </form>
+</div>

@@ -1,0 +1,16 @@
+<div id="main-container-product" class="item" *ngIf="context == 'home'">
+    <h1 class="product-title">COPOS</h1>
+    <app-copo-offer [copos]="copos" ></app-copo-offer>
+    <h1 class="product-title">CAMISETAS</h1>
+    <app-camiseta-offer [camisetas]="camisetas" ></app-camiseta-offer>
+</div>
+
+<div id="main-container-product" class="item" *ngIf="context == 'copos'">
+    <h1 class="product-title">OUTRAS OPÇÕES DE COPO</h1>
+    <app-copo-offer [copos]="copos" ></app-copo-offer>
+</div>
+
+<div id="main-container-product" class="item" *ngIf="context == 'camisetas'">
+    <h1 class="product-title">OUTRAS OPÇÕES DE CAMISETA</h1>
+    <app-camiseta-offer [camisetas]="camisetas" ></app-camiseta-offer>
+</div>

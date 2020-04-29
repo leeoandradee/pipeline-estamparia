@@ -1,13 +1,27 @@
+<ngx-spinner
+bdOpacity = 1.0
+bdColor = "#000000"
+size = "large"
+color = "#fff"
+type = "ball-clip-rotate"
+[fullScreen] = "true"
+>
+<p style="color: white" > carregando... </p>
+</ngx-spinner>
+
 <app-menu></app-menu>
 
-<h1 class="product-title">Copos e canecas</h1>
-
-<section class="product-container-box" *ngIf="camisetaProduct">
-    <div class="product-container">
-        <div class="product" *ngFor="let product of camisetaProduct" (click)="showProduct(product.id, 'camiseta')">
-            <img src="{{product.image}}" alt="foto camiseta" class="img-product"/>
-            <p class="desc-product">{{product.name}}</p>
-        </div>
+<section class="main-products">
+    <div class="products-content">
+        <h1 class="product-title">COPOS</h1>
+        <section class="product-grid" *ngIf="copos">
+            <div class="product" *ngFor="let copo of copos" (click)="showProductInformation(copo.id, 'copos')">
+                        <div class="picsum-img-wrapper">
+                            <img class="product-img" src="{{copo.imagens[0]}}"/>
+                        </div>
+                <p class="product-name">{{copo.nome}}</p>
+            </div>
+        </section>
     </div>
 </section>
 

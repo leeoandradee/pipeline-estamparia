@@ -1,0 +1,520 @@
+{
+    "copo": [
+        {
+            "id": "1",
+            "nome": "Copo Long Drink",
+            "cores": {
+                "degrade": [
+                    "Branco com Laranja",
+                    "Branco Com Verde",
+                    "Branco com Azul",
+                    "Branco com Roxo",
+                    "Branco com Amarelo",
+                    "Branco com Vermelho",
+                    "Branco com Preto",
+                    " Transparente com Laranja",
+                    "Transparente Com Verde",
+                    "Transparente com Azul",
+                    "Transparente com Roxo",
+                    "Transparente com Amarelo",
+                    "Transparente com Vermelho",
+                    "Transparente com Preto",
+                    "Jateado com Laranja",
+                    "Jateado Com Verde",
+                    "Jateado com Azul",
+                    "Jateado com Roxo",
+                    "Jateado com Amarelo",
+                    "Jateado com Vermelho",
+                    "Jatedo com Preto,"
+                ],
+                "leitosas": [
+                    "Amarelo",
+                    "Vermelho",
+                    "Branco",
+                    "Branco Pérola",
+                    "Azul claro",
+                    "Dourado",
+                    "Verde",
+                    "Prata",
+                    "Laranja",
+                    "Vermelho",
+                    "rosa",
+                    "Pink",
+                    "Azul Escuro",
+                    "preto",
+                    "Tiffany"
+                ],
+                "metalica": [
+                    "Dourado",
+                    "Prata"
+                ],
+                "neon": [
+                    "verde",
+                    "Laranja",
+                    "Rosa",
+                    "azul",
+                    "Roxo"
+                ],
+                "translucida": [
+                    "Vermelho",
+                    "Verde",
+                    "Amarelo",
+                    "Transparente"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/copos-long-drink/long-drink-combordas.jpg",
+                "assets/images/copos/copos-long-drink/long-drink-leitosos.jpg",
+                "assets/images/copos/copos-long-drink/long-drink-degrade.jpg",
+                "assets/images/copos/copos-long-drink/long-drink-metalizados.jpg",
+                "assets/images/copos/copos-long-drink/long-drink-neon.jpg",
+                "assets/images/copos/copos-long-drink/long-drink-translucidos.jpg"
+            ]
+        },
+        {
+            "id": "2",
+            "nome": "Copito 190ml",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Rosa",
+                    "Branco",
+                    "Preto",
+                    "Azul",
+                    "Vermelho"
+                ],
+                "metalica": [],
+                "neon": [],
+                "translucida": [
+                    "Transparete"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/copito/copito-azul.jpg",
+                "assets/images/copos/copito/copito-amarelo.jpg",
+                "assets/images/copos/copito/copito-cores.jpg",
+                "assets/images/copos/copito/copito-transparente.jpg"
+            ]
+        },
+        {
+            "id": "3",
+            "nome": "Copo Bucks 400ml ",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Rosa",
+                    "Branco",
+                    "Preto",
+                    "Azul",
+                    "Vermelho"
+                ],
+                "metalica": [],
+                "neon": [],
+                "translucida": []
+            },
+            "imagens": [
+                "assets/images/copos//copo-bucks/copo-bucks-branco.png",
+                "assets/images/copos//copo-bucks/copo-bucks-cores.png",
+                "assets/images/copos//copo-bucks/copo-bucks-preto.png"
+            ]
+        },
+        {
+            "id": "4",
+            "nome": "Copo Chantily 500ml e 700ml",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Branco",
+                    "Preto"
+                ],
+                "metalica": [],
+                "neon": [
+                    "Verde",
+                    "Laranja",
+                    "rosa",
+                    "Azul",
+                    "Roxo"
+                ],
+                "translucida": [
+                    "Vermelho",
+                    "Amarelo",
+                    "Transparente"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/copo-chantily/copo-chantily-leitosos.jpg",
+                "assets/images/copos/copo-chantily/copo-chantily-translucidos.jpg"
+            ]
+        },
+        {
+            "id": "5",
+            "nome": "Copinho Shot 70ml Com tampa e sem Tampa  ",
+            "cores": {
+                "degrade": [],
+                "leitosas": [],
+                "metalica": [],
+                "neon": [
+                    "Verde",
+                    "Laranja",
+                    "rosa"
+                ],
+                "translucida": [
+                    "Vermelho",
+                    "Azul",
+                    "Transparente"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/copinho-shot/copinho-shot.png",
+                "assets/images/copos/copinho-shot/copinho-cores.png"
+            ]
+        },
+        {
+            "id": "6",
+            "nome": "Copo Twister com tampa e canudo 300ml 500ml 700ml  ",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Branco",
+                    "preto"
+                ],
+                "metalica": [],
+                "neon": [
+                    "Verde",
+                    "Laranja",
+                    "rosa",
+                    "Azul",
+                    "Roxo"
+                ],
+                "translucida": [
+                    "Vermelho",
+                    "Amarelo",
+                    "Transparente"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/copos-twister-tampa-canudo/copos-twister-coloridos.jpg",
+                "assets/images/copos/copos-twister-tampa-canudo/copos-twister-leitosos.jpg",
+                "assets/images/copos/copos-twister-tampa-canudo/copos-twister-neon.jpg",
+                "assets/images/copos/copos-twister-tampa-canudo/copos-twister-translucidos.jpg"
+            ]
+        },
+        {
+            "id": "7",
+            "nome": "Copo Twister Caldereta 300ml 500ml 700ml  ",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Branco",
+                    "preto"
+                ],
+                "metalica": [],
+                "neon": [
+                    "Verde",
+                    "Laranja",
+                    "rosa",
+                    "Azul",
+                    "Roxo"
+                ],
+                "translucida": [
+                    "Vermelho",
+                    "Amarelo",
+                    "Transparente"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/copos-twister/copos-twister.jpg"
+            ]
+        },
+        {
+            "id": "8",
+            "nome": "Taça Bordô 400ml ",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Branco",
+                    "preto",
+                    "Rosa"
+                ],
+                "metalica": [],
+                "neon": [],
+                "translucida": []
+            },
+            "imagens": [
+                "assets/images/copos/taça-bordô/taça-bordo-branca.png",
+                "assets/images/copos/taça-bordô/taça-bordo-cores.png",
+                "assets/images/copos/taça-bordô/taça-bordo-preta.png"
+            ]
+        },
+        {
+            "id": "9",
+            "nome": "Taça de Vinho 290ml ",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Vermelho",
+                    "preto",
+                    "Rosa",
+                    "Dourado"
+                ],
+                "metalica": [],
+                "neon": [],
+                "translucida": []
+            },
+            "imagens": [
+                "assets/images/copos/taça-vinho/taça-vinho-cores.png",
+                "assets/images/copos/taça-vinho/taça-vinho-preto.png",
+                "assets/images/copos/taça-vinho/taça-vinho-vermelha.png"
+            ]
+        },
+        {
+            "id": "10",
+            "nome": "Taça de Gin  700ml ",
+            "cores": {
+                "degrade": [
+                    "Branco com Laranja",
+                    "Branco Com Verde",
+                    "Branco com Azul",
+                    "Branco com Roxo",
+                    "Branco com Amarelo",
+                    "Branco com Vermelho",
+                    "Branco com Preto",
+                    " Transparente com Laranja",
+                    "Transparente Com Verde",
+                    "Transparente com Azul",
+                    "Transparente com Roxo",
+                    "Transparente com Amarelo",
+                    "Transparente com Vermelho",
+                    "Transparente com Preto",
+                    "Jateado com Laranja",
+                    "Jateado Com Verde",
+                    "Jateado com Azul",
+                    "Jateado com Roxo",
+                    "Jateado com Amarelo",
+                    "Jateado com Vermelho",
+                    "Jatedo com Preto,"
+                ],
+                "leitosas": [
+                    "Branco",
+                    "preto",
+                    "Rosa",
+                    "Dourado",
+                    "Branco perola",
+                    "Tiffany"
+                ],
+                "metalica": [],
+                "neon": [],
+                "translucida": [
+                    "Transparente"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/taças-gin/taças-de-gin-combordas.jpg",
+                "assets/images/copos/taças-gin/taças-de-gin-cores.jpg",
+                "assets/images/copos/taças-gin/taças-de-gin-metalizadas.jpg",
+                "assets/images/copos/taças-gin/taças-de-gin-degrade.jpg"
+            ]
+        },
+        {
+            "id": "11",
+            "nome": "Taça de Champagne  190ml ",
+            "cores": {
+                "degrade": [
+                    "Branco com Laranja",
+                    "Branco Com Verde",
+                    "Branco com Azul",
+                    "Branco com Roxo",
+                    "Branco com Amarelo",
+                    "Branco com Vermelho",
+                    "Branco com Preto",
+                    " Transparente com Laranja",
+                    "Transparente Com Verde",
+                    "Transparente com Azul",
+                    "Transparente com Roxo",
+                    "Transparente com Amarelo",
+                    "Transparente com Vermelho",
+                    "Transparente com Preto",
+                    "Jateado com Laranja",
+                    "Jateado Com Verde",
+                    "Jateado com Azul",
+                    "Jateado com Roxo",
+                    "Jateado com Amarelo",
+                    "Jateado com Vermelho",
+                    "Jatedo com Preto,"
+                ],
+                "leitosas": [
+                    "Branco",
+                    "preto",
+                    "Rosa",
+                    "Dourado",
+                    "Branco perola",
+                    "Tiffany"
+                ],
+                "metalica": [
+                    "Dourado",
+                    "Prata"
+                ],
+                "neon": [],
+                "translucida": [
+                    "Transparente"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/taça-de-champagne/taças-de-champagne.jpg",
+                "assets/images/copos/taça-de-champagne/taças-de-champagne-combordas.jpg",
+                "assets/images/copos/taça-de-champagne/taças-de-champagne-degrade.jpg",
+                "assets/images/copos/taça-de-champagne/taças-de-champagne-degrade.jpg",
+                "assets/images/copos/taça-de-champagne/taças-de-champagne-metalizada.jpg"
+            ]
+        },
+        {
+            "id": "12",
+            "nome": "Caneca de chopp 350ml 500ml ",
+            "cores": {
+                "degrade": [
+                    "Branco com Laranja",
+                    "Branco Com Verde",
+                    "Branco com Azul",
+                    "Branco com Roxo",
+                    "Branco com Amarelo",
+                    "Branco com Vermelho",
+                    "Branco com Preto",
+                    " Transparente com Laranja",
+                    "Transparente Com Verde",
+                    "Transparente com Azul",
+                    "Transparente com Roxo",
+                    "Transparente com Amarelo",
+                    "Transparente com Vermelho",
+                    "Transparente com Preto",
+                    "Jateado com Laranja",
+                    "Jateado Com Verde",
+                    "Jateado com Azul",
+                    "Jateado com Roxo",
+                    "Jateado com Amarelo",
+                    "Jateado com Vermelho",
+                    "Jatedo com Preto"
+                ],
+                "leitosas": [
+                    "Branca"
+                ],
+                "metalica": [],
+                "neon": [],
+                "translucida": [
+                    "Transparente"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/caneca-de-chopp/caneca-de-chopp-degrade.jpg",
+                "assets/images/copos/caneca-de-chopp/caneca-de-chopp-translucidas.jpg",
+                "assets/images/copos/caneca-de-chopp/caneca-de-chopp-cores.jpg"
+            ]
+        },
+        {
+            "id": "13",
+            "nome": "Caneca de Alumínio 400ml e 600ml ",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Branca",
+                    "preta"
+                ],
+                "metalica": [
+                    "vermelha",
+                    "azul",
+                    "Dourada",
+                    "Alumínio"
+                ],
+                "neon": [],
+                "translucida": []
+            },
+            "imagens": [
+                "assets/images/copos/caneca-aluminio/caneca-aluminio-azul.jpg",
+                "assets/images/copos/caneca-aluminio/caneca-aluminio-cores.jpg",
+                "assets/images/copos/caneca-aluminio/caneca-aluminio-preta.jpg",
+                "assets/images/copos/caneca-aluminio/caneca-aluminio-vermelha.jpg"
+            ]
+        },
+        {
+            "id": "15",
+            "nome": "Balde de gelo 7litro ",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Branca",
+                    "preta"
+                ],
+                "metalica": [],
+                "neon": [],
+                "translucida": [
+                    "Transparente",
+                    "Vermelho",
+                    "Azul"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/balde-de-gelo-7l/balde-de-gelo-7l-transparente.png",
+                "assets/images/copos/balde-de-gelo-7l/balde-de-gelo-branco.png",
+                "assets/images/copos/balde-de-gelo-7l/balde-de-gelo-cores.png",
+                "assets/images/copos/balde-de-gelo-7l/balde-de-gelo-preto.png"
+            ]
+        },
+        {
+            "id": "16",
+            "nome": "Balde de gelo 1 litro ",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Branca",
+                    "preta"
+                ],
+                "metalica": [],
+                "neon": [],
+                "translucida": [
+                    "Vermelho",
+                    "Azul"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/balde-de-gelo-1l/balde-de-gelo-azul.jpg",
+                "assets/images/copos/balde-de-gelo-1l/balde-de-gelo-preto.jpg",
+                "assets/images/copos/balde-de-gelo-1l/balde-de-gelo-vermelho.jpg"
+            ]
+        },
+        {
+            "id": "17",
+            "nome": "Balde de Pipoca 1,5 litro ",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Branca",
+                    "Azul",
+                    "Rosa"
+                ],
+                "metalica": [],
+                "neon": [],
+                "translucida": [
+                    "Transparente"
+                ]
+            },
+            "imagens": [
+                "assets/images/copos/balde-de-pipoca/balde-de-pipoca-cores.png"
+            ]
+        },
+        {
+            "id": "18",
+            "nome": "Squeeze plástico 500ml ",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Branco"
+                ],
+                "metalica": [],
+                "neon": [],
+                "translucida": []
+            },
+            "imagens": [
+                "assets/images/copos/squeeze-plástico/squeeze-plastico.jpg"
+            ]
+        }
+    ]
+}

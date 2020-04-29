@@ -16,19 +16,13 @@ type = "ball-clip-rotate"
         <h1 class="product-title">CAMISETAS</h1>
         <section class="product-grid" *ngIf="camisetas">
             <div class="product" *ngFor="let camiseta of camisetas" (click)="showProductInformation(camiseta.id, 'camisetas')">
-                <ngb-carousel>
-                    <ng-template ngbSlide *ngFor="let imagem of camiseta.imagens">
                         <div class="picsum-img-wrapper">
-                            <img class="product-img" src="{{imagem}}"/>
+                            <img class="product-img" src="{{camiseta.imagens[0]}}"/>
                         </div>
-                    </ng-template>
-                </ngb-carousel>
                 <p class="product-name">{{camiseta.nome}}</p>
             </div>
         </section>
     </div>
 </section>
-
-
 
 <app-footer></app-footer>

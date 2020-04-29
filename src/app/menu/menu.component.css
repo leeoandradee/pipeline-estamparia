@@ -80,6 +80,11 @@
         margin: 0;
         color: white;
     }
+
+    #icon-navbar {
+        background-image: url(../../assets/images/menu.png);
+    }
+
 }
 
 /*----------------------TABLET SCREEN----------------------*/

@@ -1,0 +1,98 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Orçamento do pedido</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+    <form [formGroup]="budgetForm">
+        <div class="form-group">
+            <label for="name">Nome *</label>
+            <div class="input-group">
+                <input type="text" id="name" class="form-control" [class.is-invalid] = "budgetForm.get('name').invalid && budgetForm.get('name').touched" placeholder="Ex: Maria" name="name" formControlName="name">
+            </div>
+            <div *ngIf="(name.invalid && name.touched) || name.dirty">
+                <small *ngIf="name.errors?.required" class="text-danger">O nome é obrigatório</small>
+                <!--question mark(?) is a safe navigation operator-->
+                <small *ngIf="name.errors?.pattern" class="text-danger">Nome inválido</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Sobrenome *</label>
+            <div class="input-group">
+                <input type="text" id="lastName" class="form-control" [class.is-invalid] = "budgetForm.get('lastName').invalid && budgetForm.get('lastName').touched" placeholder="Ex: Coutinho" name="lastName" formControlName="lastName">
+            </div>
+            <div *ngIf="(lastName.invalid && lastName.touched) || lastName.dirty">
+                <small *ngIf="lastName.errors?.required" class="text-danger">O sobrenome é obrigatório</small>
+                <!--question mark(?) is a safe navigation operator-->
+                <small *ngIf="lastName.errors?.pattern" class="text-danger">Sobrenome inválido</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email *</label>
+            <div class="input-group">
+                <input type="email" id="email" class="form-control" [class.is-invalid] = "budgetForm.get('email').invalid && budgetForm.get('email').touched" placeholder="nome@exemplo.com" name="nome" formControlName="email" >
+            </div>
+            <div *ngIf="(email.invalid && email.touched) || email.dirty">
+                <small *ngIf="email.errors?.required" class="text-danger">O email é obrigatório</small>
+                <!--question mark(?) is a safe navigation operator-->
+                <small *ngIf="email.errors?.pattern" class="text-danger">Email inválido</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phone">Celular *</label>
+            <div class="input-group">
+                <input type="tel" id="phone" class="form-control" [class.is-invalid] = "budgetForm.get('phone').invalid && budgetForm.get('phone').touched" placeholder="Ex: (55) 55555-5555" name="phone" mask="(00) 00000-0000" formControlName="phone">
+            </div>
+            <div *ngIf="(phone.invalid && phone.touched) || phone.dirty">
+                <small *ngIf="phone.errors?.required" class="text-danger">O número de celular é obrigatório</small>
+                <!--question mark(?) is a safe navigation operator-->
+                <small *ngIf="phone.errors?.pattern" class="text-danger">Número de celular inválido</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="cep">CEP *</label>
+            <div class="input-group">
+                <input type="tel" id="cep" class="form-control" [class.is-invalid] = "budgetForm.get('cep').invalid && budgetForm.get('cep').touched" placeholder="Ex: 55555-555" name="cep" mask="00000-000" formControlName="cep">
+            </div>
+            <div *ngIf="(cep.invalid && cep.touched) || cep.dirty">
+                <small *ngIf="cep.errors?.required" class="text-danger">O CEP é obrigatório</small>
+                <!--question mark(?) is a safe navigation operator-->
+                <small *ngIf="cep.errors?.pattern" class="text-danger">CEP inválido</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="notes">Notas do pedido (Opcional)</label>
+            <div class="input-group">
+                <textarea rows="10" cols="30" maxlength="100" id="dateOfBirth" class="form-control" placeholder="" name="nome" formControlName="notes"></textarea>
+            </div>
+        </div>
+    </form>
+    </div>
+    <div class="modal-footer">
+        <div style="width: 100%;" [ngbTooltip]="budgetForm.invalid ? 'Preencha os seus dados para enviar o orçamento' : ''" placement="top">
+            <button id="budget-button" type="submit" ngbAutofocus class="btn-modal-confirm" (click)="checkout()" [disabled]="budgetForm.invalid">
+                <span id="confirm-span" >enviar orçamento</span>
+                <span id="spinner-span" class="spinner-border text-light" role="status" aria-hidden="true"></span>
+            </button>
+        </div>
+        <button id="budget-button" type="button" style="width: 100%; background-color: white; color: black;" class="btn btn-outline-dark" (click)="modal.close('Save click')">cancelar</button>
+    </div>
+</ng-template>            
+
+
+
+<ng-template #contentt let-modal>
+    <div class="modal-body">
+        <div style="display: flex; justify-content: space-around; flex-direction: row; align-items: center; align-content: center;">
+            <img src="assets/correct.png" aria-hidden="true" width="80" height="80"/>
+            <p style="margin-left: 10px;">Seu orçamento foi solicitado com sucesso!</p>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+    </div>
+</ng-template>
+
+<button id="button-confirm" class="btn btn-lg btn-outline-primary" style="display: none;" (click)="openConfirmCheckoutModal(contentt)">Launch demo modal</button>

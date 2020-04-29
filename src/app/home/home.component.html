@@ -11,21 +11,12 @@ type = "ball-clip-rotate"
 
 <app-menu></app-menu>
 
-<section id="banner-container-box">
-    <ngb-carousel>
-        <ng-template ngbSlide>
-            <div class="picsum-img-wrapper">
-                <img class="banner-image" src="../assets/images/banner-camiseta.jpg"/>
-            </div>
-        </ng-template>
-        <ng-template ngbSlide>
-            <div class="picsum-img-wrapper ">
-                <img class="banner-image" src="../assets/images/banner-canecas.jpg" alt="Random second slide">
-            </div>
-        </ng-template>
-    </ngb-carousel>
-</section>
+<owl-carousel [options]="SlideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" id="banner-container-box"> 
+    <div class="picsum-img-wrapper" *ngFor="let bannerImage of bannerImages" id="banner-container">
+        <img class="banner-image" src="{{bannerImage}}" alt="Random second slide">
+    </div>
+</owl-carousel>  
 
-<app-product></app-product>
+<app-product-offer [context]="'home'"></app-product-offer>
 
 <app-footer></app-footer>

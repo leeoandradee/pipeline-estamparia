@@ -8,6 +8,18 @@ import { NgxSpinnerService } from 'ngx-spinner';
 })
 export class HomeComponent implements OnInit, AfterViewInit {
 
+  bannerImages = ["assets/images/banner-camiseta.jpg", "assets/images/banner-canecas.jpg"];
+
+  SlideOptions = { 
+    items: 1, 
+    dots: true, 
+    autoplay:true,
+    loop:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true
+  } 
+
+
   constructor(
     private spinner: NgxSpinnerService
   ) { }

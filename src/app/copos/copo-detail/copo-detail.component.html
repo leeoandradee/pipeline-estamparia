@@ -1,0 +1,24 @@
+    
+<owl-carousel [options]="SlideOptionsShirt" [carouselClasses]="['owl-theme', 'sliding']" id="image-container"> 
+    <div *ngFor="let imagem of copo.imagens"> 
+        <img src="{{imagem}}" alt="foto camiseta" class="img-product"/>
+    </div>
+</owl-carousel>  
+
+<div id="description-container">
+    <h2><b>{{copo.nome}}</b></h2>
+    <form [formGroup]="copoForm">
+        <section id="size-color-container" >
+            <div class="size-color-group" *ngFor="let tipoCor of copo.cores | keyvalue">   
+                <label for="cars" *ngIf="tipoCor.value.length > 0"><b>{{tipoCor.key | uppercase}}</b></label>
+                <select name="cor" class="size-color-options" *ngIf="tipoCor.value.length > 0">       
+                    <option value="">-</option>                                   
+                    <option value="{{cor}}" *ngFor="let cor of tipoCor.value">{{cor}}</option>                      
+                </select>
+<!--                     <div *ngIf="(cor.invalid && cor.touched) || cor.dirty">
+                    <small *ngIf="cor.errors?.required" class="text-danger">A cor da camiseta é obrigatório</small>
+                </div> -->
+            </div>
+        </section>
+    </form>
+</div>

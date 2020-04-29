@@ -8,7 +8,6 @@ import { FooterComponent } from './footer/footer.component';
 import { ProductInformationComponent } from './product-information/product-information.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
-import { PaymentOptionComponent } from './payment-option/payment-option.component';
 import { ProductsService } from './services/product-service/products.service';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CamisetasComponent } from './camisetas/camisetas.component';
@@ -19,6 +18,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxMaskModule } from 'ngx-mask';
 import { IConfig } from 'ngx-mask';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { OwlModule } from 'ngx-owl-carousel';
+import { CopoDetailComponent } from './copos/copo-detail/copo-detail.component';
+import { CamisetaDetailComponent } from './camisetas/camiseta-detail/camiseta-detail.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { ProductOfferComponent } from './product-offer/product-offer.component';
+import { CamisetaOfferComponent } from './product-offer/camiseta-offer/camiseta-offer.component';
+import { CopoOfferComponent } from './product-offer/copo-offer/copo-offer.component'; 
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {}
 
@@ -30,19 +37,26 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {}
     FooterComponent,
     ProductInformationComponent,
     HomeComponent,
-    PaymentOptionComponent,
     CamisetasComponent,
     CoposComponent,
-    ErrorComponent
+    ErrorComponent,
+    CopoDetailComponent,
+    CamisetaDetailComponent,
+    CheckoutComponent,
+    ProductOfferComponent,
+    CamisetaOfferComponent,
+    CopoOfferComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     NgbModule,
     NgxSpinnerModule,
     BrowserAnimationsModule,
     NgxMaskModule.forRoot(options),
     ReactiveFormsModule,
+    OwlModule,
   ],
   providers: [
     ProductsService

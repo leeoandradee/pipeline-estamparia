@@ -11,6 +11,7 @@ export class MenuComponent implements OnInit {
 
   isOpen = false;
   isMobileMenu = false;
+  navbarOpen = false;
 
   ngOnInit() {
 
@@ -33,8 +34,10 @@ export class MenuComponent implements OnInit {
       menuList.style.transitionDelay = '2s';
       this.isOpen = true;
     }
-    
-    
+  }
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
   }
 
 }

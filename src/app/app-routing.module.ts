@@ -8,7 +8,7 @@ import { CoposComponent } from './copos/copos.component';
 import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'produto-info', component: ProductInformationComponent },
   { path: 'camisetas', component: CamisetasComponent },
   { path: 'copos', component: CoposComponent },
@@ -19,6 +19,6 @@ const routes: Routes = [
 
 @NgModule({
   exports: [ RouterModule ],
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'}) ],
 })
 export class AppRoutingModule { }

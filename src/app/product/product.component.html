@@ -1,11 +1,11 @@
-<section *ngFor="let productType of products | keyvalue">
+<div id="main-container-product" class="item" *ngFor="let productType of products | keyvalue">
     <h1 class="product-title">{{productType.key | uppercase}}</h1>
-    <section class="product-container-box">
-        <div class="product-container">
-            <div class="product" *ngFor="let product of productType.value" (click)="showProductInformation(product.id, productType.key)">
+    <owl-carousel [options]="SlideOptions" [carouselClasses]="['owl-theme', 'sliding']" > 
+        <div class="product-container" *ngFor="let product of productType.value" (click)="showProductInformation(product.id, productType.key)"> 
+            <div class="product">
                 <img src="{{product.imagens[0]}}" alt="foto camiseta" class="img-product"/>
                 <p class="desc-product">{{product.nome}}</p>
             </div>
         </div>
-    </section>
-</section>
+    </owl-carousel>  
+</div>  
