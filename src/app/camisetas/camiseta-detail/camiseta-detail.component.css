@@ -1,4 +1,13 @@
 @media screen and (max-width: 767px) { 
+
+
+    #camiseta-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
     #product-info {
         width: 100%;
         display: flex;
@@ -221,6 +230,14 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #camiseta-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
     #product-info {
         width: 100%;
         display: flex;
@@ -437,6 +454,14 @@
 }
 
 @media screen and (min-width: 1024px) {
+
+    #camiseta-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
     #product-info {
         width: 100%;
         display: flex;

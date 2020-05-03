@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { IProduct } from 'src/app/model/product.model';
 
 @Component({
@@ -11,6 +11,7 @@ export class CamisetaOfferComponent implements OnInit {
   constructor() { }
 
   @Input("camisetas") camisetas : IProduct[];
+  @Output() camisetaInformation = new EventEmitter<{productId: string, productType: string}>();
 
   SlideOptions = { 
     items: 1, 
@@ -36,6 +37,11 @@ export class CamisetaOfferComponent implements OnInit {
 
   ngOnInit() {
     console.log(this.camisetas);
+  }
+
+  getProductInformation(productId: string, productType: string) {
+    console.log(productType);
+    this.camisetaInformation.emit({productId: productId, productType: productType})
   }
 
 }

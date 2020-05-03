@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ICopo } from 'src/app/model/copo.model';
 
 @Component({
@@ -11,6 +11,7 @@ export class CopoOfferComponent implements OnInit {
   constructor() { }
 
   @Input("copos") copos : ICopo[];
+  @Output() copoInformation = new EventEmitter<{productId: string, productType: string}>();
 
   SlideOptions = { 
     items: 1, 
@@ -36,6 +37,11 @@ export class CopoOfferComponent implements OnInit {
 
   ngOnInit() {
     console.log(this.copos);
+  }
+
+  getProductInformation(productId: string, productType: string) {
+    console.log(productType);
+    this.copoInformation.emit({productId: productId, productType: productType})
   }
 
 }

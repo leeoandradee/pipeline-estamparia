@@ -85,6 +85,14 @@
         background-image: url(../../assets/images/menu.png);
     }
 
+    .nav-link {
+        color: white !important;
+    }
+
+    .nav-item {
+        margin-top: 0.5rem;
+    }
+
 }
 
 /*----------------------TABLET SCREEN----------------------*/

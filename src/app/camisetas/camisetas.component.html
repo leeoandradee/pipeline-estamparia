@@ -16,10 +16,8 @@ type = "ball-clip-rotate"
         <h1 class="product-title">CAMISETAS</h1>
         <section class="product-grid" *ngIf="camisetas">
             <div class="product" *ngFor="let camiseta of camisetas" (click)="showProductInformation(camiseta.id, 'camisetas')">
-                        <div class="picsum-img-wrapper">
-                            <img class="product-img" src="{{camiseta.imagens[0]}}"/>
-                        </div>
-                <p class="product-name">{{camiseta.nome}}</p>
+                <img class="product-img" src="{{camiseta.imagens[0]}}"/>
+            <p class="product-name">{{camiseta.nome}}</p>
             </div>
         </section>
     </div>

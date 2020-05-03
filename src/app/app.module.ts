@@ -3,7 +3,6 @@ import { NgModule, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
-import { ProductComponent } from './product/product.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductInformationComponent } from './product-information/product-information.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -33,7 +32,6 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {}
   declarations: [
     AppComponent,
     MenuComponent,
-    ProductComponent,
     FooterComponent,
     ProductInformationComponent,
     HomeComponent,

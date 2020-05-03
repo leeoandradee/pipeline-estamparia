@@ -24,18 +24,6 @@ export class MenuComponent implements OnInit {
 
   }
 
-  openMobileMenu() {
-    const menuList = document.getElementById('menu-list');
-    if (this.isOpen) {
-      menuList.style.display = 'none';
-      this.isOpen = false;
-    } else {
-      menuList.style.display = 'flex';
-      menuList.style.transitionDelay = '2s';
-      this.isOpen = true;
-    }
-  }
-
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }

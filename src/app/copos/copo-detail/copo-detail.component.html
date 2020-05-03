@@ -1,24 +1,44 @@
-    
-<owl-carousel [options]="SlideOptionsShirt" [carouselClasses]="['owl-theme', 'sliding']" id="image-container"> 
-    <div *ngFor="let imagem of copo.imagens"> 
-        <img src="{{imagem}}" alt="foto camiseta" class="img-product"/>
-    </div>
-</owl-carousel>  
+<section id="copo-container">
+    <owl-carousel [options]="SlideOptionsShirt" [carouselClasses]="['owl-theme', 'sliding']" id="carousel-container"> 
+            <img src="{{imagem}}" alt="foto camiseta" class="image-product" *ngFor="let imagem of copo.imagens"/>
+    </owl-carousel>  
 
-<div id="description-container">
-    <h2><b>{{copo.nome}}</b></h2>
-    <form [formGroup]="copoForm">
-        <section id="size-color-container" >
-            <div class="size-color-group" *ngFor="let tipoCor of copo.cores | keyvalue">   
-                <label for="cars" *ngIf="tipoCor.value.length > 0"><b>{{tipoCor.key | uppercase}}</b></label>
-                <select name="cor" class="size-color-options" *ngIf="tipoCor.value.length > 0">       
-                    <option value="">-</option>                                   
-                    <option value="{{cor}}" *ngFor="let cor of tipoCor.value">{{cor}}</option>                      
-                </select>
-<!--                     <div *ngIf="(cor.invalid && cor.touched) || cor.dirty">
-                    <small *ngIf="cor.errors?.required" class="text-danger">A cor da camiseta é obrigatório</small>
-                </div> -->
+    <div id="description-container">
+        <h2><b>{{copo.nome}}</b></h2>
+        <form [formGroup]="copoForm">
+            <section id="copo-information" >
+                <p><b>Tipos de cores</b></p>
+                <div class="copo-type-color" *ngFor="let tipoCor of copo.cores | keyvalue">
+                    <input type="radio" class="radio-type-color" name="tipoCor" formControlName="tipoCor" value="{{tipoCor.key}}" (change)="getColorTypeSelected(tipoCor.key)" *ngIf="tipoCor.value.length > 0">
+                    <label for="{{tipoCor.key}}" *ngIf="tipoCor.value.length > 0" class="label-type-color">{{tipoCor.key | uppercase}}</label>  
+                </div>
+                <div class="cores-group">
+                    <label for="cor"><b>Cores</b></label>
+                    <select name="cor" formControlName="cor" class="size-color-options" (blur)="verifyCopoForm()">
+                        <option value="">-</option>       
+                        <option [value]="cor" *ngFor="let cor of colors">{{cor}}</option>                                                  
+                    </select>
+                    <div *ngIf="(cor.invalid && cor.touched) || cor.dirty">
+                        <small *ngIf="cor.errors?.required" class="text-danger">A cor do copo é obrigatório</small>
+                    </div>
+                </div>
+            </section>
+        </form>
+        <section id="checkout-group">
+            <div id="amount-box">
+                <section id="amount-container">
+                    <div id="amount-number">
+                        <p id="amount-p">{{amount}}</p>
+                    </div>
+                    <div id="amount-buttons">
+                        <button class="amount-button first" (click)="addUnity()">+</button>
+                        <button class="amount-button" (click)="removeUnity()" [ngbTooltip]="(amount == 10) ? 'Devido ao nosso fornecedor, a quantidade mínina de peças são 10.' : ''" placement="bottom" triggers="click:blur">-</button>
+                    </div>
+                </section>
+            </div>
+            <div id="budget-button-box" [ngbTooltip]="copoForm.invalid ? 'Preencha os dados do produto para realizar o orçamento' : ''" placement="bottom">
+                <button id="budget-button" [disabled]="copoForm.invalid" (click)="checkout()">FAZER ORÇAMENTO</button>
             </div>
         </section>
-    </form>
-</div>
+    </div>
+</section>

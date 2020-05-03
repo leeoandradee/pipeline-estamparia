@@ -28,7 +28,6 @@ export class CamisetasComponent implements OnInit, AfterViewInit {
   }
 
   showProductInformation(productId: string, productType: string) {
-    console.log('entrou');
     this.router.navigate(['produto-info'], { queryParams: { 'productType': productType, 'productId': productId }});
   }
 

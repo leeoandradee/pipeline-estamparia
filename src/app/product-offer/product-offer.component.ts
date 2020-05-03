@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ProductsService } from '../services/product-service/products.service';
 import { IProduct } from '../model/product.model';
 import { ICopo } from '../model/copo.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-offer',
@@ -12,6 +13,7 @@ export class ProductOfferComponent implements OnInit {
 
   constructor(
     private productsService: ProductsService,
+    private router: Router,
   ) { }
 
   @Input("context") context : string;
@@ -36,6 +38,12 @@ export class ProductOfferComponent implements OnInit {
         this.copos = this.products.copos;
         break;
     }
+  }
+
+  showProductInformation(productInformation: {productId: string, productType: string}) {
+    console.log('Tipo produto: ' + productInformation.productType);
+    this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
+    this.router.navigate(['/produto-info'], { queryParams: { 'productType': productInformation.productType, 'productId': productInformation.productId }}));
   }
 
 }

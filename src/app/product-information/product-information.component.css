@@ -59,6 +59,11 @@
         margin-bottom: 1rem;
     }
 
+    #budget-button-aux {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
     #budget-button {
         align-self: center;
         padding: 10px;

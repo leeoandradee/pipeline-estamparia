@@ -1,43 +1,15 @@
 @media screen and (max-width: 767px) { 
-    #product-info {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
 
-    #product-information-container {
-        width: 80%;
+    #copo-container{
+        width: 100%;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        margin-top: 30px;
-    }
-
-    #product-info {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-    
-    #product-information-container {
-        width: 80%;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-    }
-
-    #image-container {
-        width: 90%;
     }
 
     .image-product {
         width: 100%;
+        max-height: 368px;
     }
 
     #description-container {
@@ -45,18 +17,6 @@
         justify-content: space-around;
         flex-direction: column;
         width: 100%;
-    }
-
-    .product-info-title {
-        margin: 0;
-    }
-
-    .product-info-value {
-        margin-bottom: 1rem;
-    }
-
-    .product-info-value-last  {
-        margin-bottom: 1rem;
     }
 
     #budget-button {
@@ -92,24 +52,6 @@
         border: solid 1px black;
     }
     
-
-    #product-info {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-    
-    #product-information-container {
-        width: 80%;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-    }
-    
     #budget-button:enabled:hover {
         background-color: #333;
     }
@@ -125,24 +67,30 @@
     p {
         font-family: 'Open Sans', sans-serif;
         font-size: 1rem;
+        margin-top: 1rem;
     }
 
-    #size-color-container {
+    #copo-information {
         width: 100%;
         display: flex;
-        justify-content: space-around;
         flex-direction: column;
-        align-items: center;
-        align-content: center;
         border-top: solid 1px black;
     }
 
-    .size-color-group {
+    .cores-group {
         width: 100%;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
         margin-top: 1rem;
+    }
+
+    .copo-type-color {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
     }
 
     .size-color-options {
@@ -218,29 +166,35 @@
     #spinner-span {
         display: none; 
     }
+
+    .radio-type-color {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+        border-radius: 50%;
+    }
+
+    .radio-type-color :hover {
+        background-color: #ccc;
+    }
+
+    .radio-type-color :checked{
+        background-color: black;
+    }
+
+    .label-type-color {
+        margin-left: 2rem;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    #product-info {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
 
-    #product-information-container {
-        width: 90%;
+    #copo-container{
+        width: 100%;
         display: flex;
         justify-content: space-around;
         flex-direction: row;
-        align-items: center;
-        align-content: center;
-        margin-top: 40px;
-    }
-
-    #image-container {
-        width: 40%;
     }
 
     .image-product {
@@ -254,30 +208,16 @@
 
     #description-container {
         display: flex;
-        justify-content: space-around;
         flex-direction: column;
-        width: 40%;
+        width: 50%;
         border: 2px solid black;
         padding: 15px;
-    }
-
-
-    .product-info-title {
-        margin: 0;
-    }
-
-    .product-info-value {
-        margin-bottom: 1rem;
-    }
-
-    .product-info-value-last  {
-        margin-bottom: 1rem;
     }
     
     #budget-button {
         align-self: center;
         padding: 10px;
-        width: 80%;
+        width: 100%;
         border-radius: 3px;
         border: 2px solid black;
         background-color: black;
@@ -295,7 +235,7 @@
     #budget-button:disabled {
         align-self: center;
         padding: 10px;
-        width: 80%;
+        width: 100%;
         border-radius: 3px;
         border: 2px solid black;
         background-color: white;
@@ -322,14 +262,6 @@
     #budget-button:enabled:hover {
         background-color: #333;
     }
-
-    #product-info {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
     
     #budget-link {
         text-decoration: none;
@@ -349,19 +281,16 @@
         font-size: 1rem;
     }
 
-    #size-color-container {
+    #copo-information {
         width: 100%;
         display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
+        flex-direction: column;
         padding-top: 1rem;
         border-top: solid 1px black;
     }
 
-    .size-color-group {
-        width: 40%;
+    .cores-group {
+        width: 100%;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -434,29 +363,23 @@
         display: none; 
     }
 
+    #amount-box{
+        width: 30%;
+    }
+
+    #budget-button-box {
+        width: 60%;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
-    #product-info {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
 
-    #product-information-container {
-        width: 70%;
+    #copo-container{
+        width: 100%;
         display: flex;
         justify-content: space-around;
         flex-direction: row;
-        align-items: center;
-        align-content: center;
-        margin-top: 40px;
-    }
-
-    #image-container {
-        width: 40%;
     }
 
     .image-product {
@@ -465,7 +388,6 @@
 
     #description-container {
         display: flex;
-        justify-content: space-around;
         flex-direction: column;
         width: 45%;
         border: 2px solid black;
@@ -474,18 +396,6 @@
 
     #carousel-container {
         width: 40%;
-    }
-
-    .product-info-title {
-        margin: 0;
-    }
-
-    .product-info-value {
-        margin-bottom: 1rem;
-    }
-
-    .product-info-value-last {
-        margin-bottom: 1rem;
     }
 
     #budget-button {
@@ -536,14 +446,6 @@
     #budget-button:enabled:hover {
         background-color: #333;
     }
-
-    #product-info {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
     
     #budget-link {
         text-decoration: none;
@@ -555,7 +457,7 @@
     h2 {
         font-family: 'Open Sans', sans-serif;
         font-size: 1.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     
     p {
@@ -563,22 +465,20 @@
         font-size: 1rem;
     }
 
-    #size-color-container {
+    #copo-information {
         width: 100%;
         display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
-        padding-top: 1rem;
+        flex-direction: column;
+        padding-top: 2rem;
         border-top: solid 1px black;
     }
 
-    .size-color-group {
-        width: 40%;
+    .cores-group {
+        width: 100%;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
+        margin-top: 1rem;
     }
 
     .size-color-options {
@@ -651,6 +551,22 @@
 
     #spinner-span {
         display: none; 
+    }
+
+    label {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .label-type-color {
+        margin-left: 1rem;
+    }
+
+    #amount-box{
+        width: 30%;
+    }
+
+    #budget-button-box {
+        width: 60%;
     }
 
 }

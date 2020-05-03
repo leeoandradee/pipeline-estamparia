@@ -1,5 +1,5 @@
 <owl-carousel [options]="SlideOptions" [carouselClasses]="['owl-theme', 'sliding']" > 
-    <div class="product-container" *ngFor="let copo of copos" (click)="showProductInformation(product.id, productType.key)"> 
+    <div class="product-container" *ngFor="let copo of copos" (click)="getProductInformation(copo.id, 'copos')"> 
         <div class="product">
             <img src="{{copo.imagens[0]}}" alt="foto camiseta" class="img-product"/>
             <p class="desc-product">{{copo.nome}}</p>
