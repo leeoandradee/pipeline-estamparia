@@ -12,7 +12,7 @@ export class CopoDetailComponent implements OnInit {
   constructor() { }
 
   @Input("copo") copo : ICopo;
-  @Output() copoFormValidated = new EventEmitter<{formIsValid: boolean}>();
+  @Output() copoDetail = new EventEmitter<{typeColor: string, color: string, amount: number}>();
 
   SlideOptionsShirt = { 
     items: 1, 
@@ -29,8 +29,7 @@ export class CopoDetailComponent implements OnInit {
 
   typeColorSelected : "";
   colors : string[];
-  amount : number = 10;
-  isMinimun : boolean = true;
+  amount : number;
 
   ngOnInit() {
     console.log(this.copo);
@@ -61,7 +60,6 @@ export class CopoDetailComponent implements OnInit {
         this.colors = this.copo.cores.degrade;
         break;
     }
-    this.verifyCopoForm();
   }
 
   get cor() {
@@ -72,29 +70,13 @@ export class CopoDetailComponent implements OnInit {
     return this.copoForm.get('tipoCor')
   }
 
-  verifyCopoForm() {
-    console.log("TIPO COR: " + this.tipoCor.value);
-    console.log("COR: " + this.cor.invalid);
-    if (this.cor.invalid && this.tipoCor.invalid) {
-      this.copoFormValidated.emit({formIsValid: false});
-      return false;
-    } else {
-      this.copoFormValidated.emit({formIsValid: true});
-      return true;
-    }
+  onSelectedAmount(selectedAmount : {selectedAmount: number}) {
+    this.amount = selectedAmount.selectedAmount;
   }
 
-  addUnity() {
-    this.amount++;
-  }
-
-  removeUnity() {
-    if(this.amount !== 10) {
-      this.amount--;
-      this.isMinimun = false;
-    } else {
-      this.isMinimun = true;
-    }
+  checkout() {
+    console.log('foi')
+    this.copoDetail.emit({amount: this.amount, color: this.cor.value, typeColor: this.tipoCor.value});
   }
 
 }

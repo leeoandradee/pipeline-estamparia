@@ -1,0 +1,141 @@
+@media screen and (max-width: 767px) { 
+
+    #amount-container {
+        width: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: row;
+        border: solid 1px black;
+        border-radius: 3px;
+    }
+    
+    #amount-number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        width: 60%;
+        border-right: solid 1px black;
+    }
+    
+    #amount-buttons {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        width: 40%;
+    }
+    
+    .amount-button {
+        text-decoration: none;
+        border: none;
+        background: none;
+        width: 100%;
+    }
+    
+    .amount-button.first {
+        border-bottom: solid 1px black;
+    }
+    
+    #amount-p {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #amount-container {
+        width: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: row;
+        border: solid 1px black;
+        border-radius: 3px;
+    }
+    
+    #amount-number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        width: 60%;
+        border-right: solid 1px black;
+    }
+    
+    #amount-buttons {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        width: 40%;
+    }
+    
+    .amount-button {
+        text-decoration: none;
+        border: none;
+        background: none;
+        width: 100%;
+    }
+    
+    .amount-button.first {
+        border-bottom: solid 1px black;
+    }
+    
+    #amount-p {
+        margin: 0;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    #amount-container {
+        width: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: row;
+        border: solid 1px black;
+        border-radius: 3px;
+    }
+    
+    #amount-number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        width: 60%;
+        border-right: solid 1px black;
+    }
+    
+    #amount-buttons {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        width: 40%;
+    }
+    
+    .amount-button {
+        text-decoration: none;
+        border: none;
+        background: none;
+        width: 100%;
+    }
+    
+    .amount-button.first {
+        border-bottom: solid 1px black;
+    }
+    
+    #amount-p {
+        margin: 0;
+    }
+    
+    #budget-button-box {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+

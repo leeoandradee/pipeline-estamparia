@@ -15,11 +15,11 @@ type = "ball-clip-rotate"
     <section id="product-information-container" >
         
         <div *ngIf="productType=='camisetas'" style="width: 100%;">
-            <app-camiseta-detail [camiseta]="product" (camisetaFormValidated)="onValidatedForm($event)"> </app-camiseta-detail>
+            <app-camiseta-detail [camiseta]="product" (camisetaDetail)="onCamisetaCheckout($event)"> </app-camiseta-detail>
         </div>
 
         <div *ngIf="productType=='copos'" style="width: 100%;">
-            <app-copo-detail [copo]="product" (copoFormValidated)="onValidatedForm($event)"></app-copo-detail>
+            <app-copo-detail [copo]="product" (copoDetail)="onCopoCheckout($event)"></app-copo-detail>
         </div>
 <!-- 
         <div id="budget-button-aux" [ngbTooltip]="formIsValid ? '' : 'Selecione os campos acima para prosseguir'" placement="bottom">
@@ -34,7 +34,7 @@ type = "ball-clip-rotate"
 <app-footer></app-footer>
 
 <!--  MODAL CHECKOUT -->
-<ng-template #content let-modal>
+<ng-template #checkoutModal let-modal>
     <div class="modal-header">
     <h4 class="modal-title" id="modal-basic-title">Orçamento do pedido</h4>
     <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
@@ -119,7 +119,7 @@ type = "ball-clip-rotate"
 <!--  MODAL CHECKOUT -->
 
 <!-- MODAL CONFIRM CHECKOUT -->
-<ng-template #contentt let-modal>
+<ng-template #confirmModal let-modal>
     <div class="modal-body">
         <div style="display: flex; justify-content: space-around; flex-direction: row; align-items: center; align-content: center;">
             <img src="assets/correct.png" aria-hidden="true" width="80" height="80"/>

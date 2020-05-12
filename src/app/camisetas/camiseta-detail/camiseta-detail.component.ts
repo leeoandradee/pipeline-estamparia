@@ -11,9 +11,8 @@ export class CamisetaDetailComponent implements OnInit {
 
   constructor() { }
 
-  @Output() camisetaFormValidated = new EventEmitter<{formIsValid: boolean}>();
-
   @Input("camiseta") camiseta: IProduct;
+  @Output() camisetaDetail = new EventEmitter<{color: string, amount: number, size: number}>();
 
   corIsValid : boolean;
   tamanhoIsValid : boolean;
@@ -32,6 +31,8 @@ export class CamisetaDetailComponent implements OnInit {
       Validators.required]),
   });
 
+  amount : number;
+
   ngOnInit() {
     console.log(this.camiseta)
     this.camisetaForm.touched
@@ -45,16 +46,12 @@ export class CamisetaDetailComponent implements OnInit {
     return this.camisetaForm.get('tamanho')
   }
 
-  verifyCamisetaForm() {
-    console.log("validando form");
-    if (this.tamanho.invalid || this.cor.invalid) {
-      this.camisetaFormValidated.emit({formIsValid: false});
-      return false;
-    } else {
-      this.camisetaFormValidated.emit({formIsValid: true});
-      return true;
-    }
+  onSelectedAmount(selectedAmount : {selectedAmount: number}) {
+    this.amount = selectedAmount.selectedAmount;
   }
 
+  checkout() {
+    this.camisetaDetail.emit({color: this.cor.value, amount: this.amount, size: this.tamanho.value})
+  }
 
 }

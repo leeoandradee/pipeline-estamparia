@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ProductsService } from '../services/product-service/products.service';
 import { IProduct } from '../model/product.model';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -8,6 +8,10 @@ import { Validators } from '@angular/forms';
 import { CheckoutService } from '../services/checkout-service/checkout-service.service';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import * as _ from 'lodash';
+import { ICopo } from '../model/copo.model';
+import { IOrder } from './product-information-model/product-information-order.model';
+import { IClient } from '../model/client.model';
+import { ICopoOrder } from './product-information-model/copo.order.model';
 
 @Component({
   selector: 'app-product-information',
@@ -21,8 +25,7 @@ export class ProductInformationComponent implements OnInit {
   productType: string;
   productId: string;
   product: any;
-  amount : number = 10;
-  isMinimun : boolean = true;
+  amount : number;
   isLoadingModal = false;
   formIsValid : boolean;
   
@@ -51,10 +54,10 @@ export class ProductInformationComponent implements OnInit {
     notes: new FormControl('',[]),
     });
 
+    @ViewChild("checkoutModal", {static: false}) checkoutModal: any;
+    @ViewChild("confirmModal", {static: false}) confirmModal: any;
 
-
-  
-   
+    order: IOrder;
 
   constructor(
     private router: Router,
@@ -66,6 +69,7 @@ export class ProductInformationComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.order = new IOrder();
     this.formIsValid = false;
     this.spinner.show();
     window.scrollTo({
@@ -114,27 +118,27 @@ export class ProductInformationComponent implements OnInit {
     return false;
   }
 
-
-  addUnity() {
-    this.amount++;
+  onCopoCheckout(copoDetail:{amount: number, color: string, typeColor: string}) {
+    this.order.copo = {
+      id : this.product.id,
+      name : this.product.name,
+      styleColor : copoDetail.typeColor,
+      color : copoDetail.color, 
+      quantity : copoDetail.amount.toString()
+    }
+    this.openCheckoutModal(this.checkoutModal);
   }
 
-  removeUnity() {
-    if(this.amount !== 10) {
-      this.amount--;
-      this.isMinimun = false;
-    } else {
-      this.isMinimun = true;
+  onCamisetaCheckout(camisetaDetail:{color: string, amount: number, size: number}) {
+    this.order.camiseta = {
+      id : this.product.id,
+      name : this.product.nome,
+      style : this.product.modelo,
+      size: camisetaDetail.size.toString(),
+      color : camisetaDetail.color, 
+      quantity : camisetaDetail.amount.toString()
     }
-  }
-
-  onValidatedForm(formIsValid : {formIsValid: boolean}) {
-    console.log(formIsValid)
-    if (formIsValid.formIsValid) {
-      this.formIsValid = true;
-    } else {
-      this.formIsValid = false;
-    }
+    this.openCheckoutModal(this.checkoutModal);
   }
 
   /* MODAL */
@@ -154,32 +158,24 @@ export class ProductInformationComponent implements OnInit {
     this.isLoadingModal = true;
     (document.querySelector('#confirm-span') as HTMLElement).style.display = 'none';
     (document.querySelector('#spinner-span') as HTMLElement).style.display = 'block';
-    var checkout = {
-      "client": {
-        "name" : this.name.value,
-        "lastName" : this.lastName.value,
-        "email" : this.email.value,
-        "celphone" : this.phone.value,
-        "cep" : this.cep.value,
-        "notes" : this.notes.value,
-      },
-      "product": {
-        "id" : this.product.id,
-        "name" : this.product.nome,
-        "style" : this.product.modelo,
-        //"size" : this.tamanho.value,
-        //"color" : this.cor.value,
-        "quantity" : this.amount.toString()
-      }
+    var client : IClient = {
+      name : this.name.value,
+      lastName : this.lastName.value,
+      email : this.email.value,
+      celphone : this.phone.value,
+      cep : this.cep.value,
+      notes : this.notes.value
     }
+    this.order.cliente = client;
 
-    console.log(checkout);
-    var response =  this.checkoutService.checkout(checkout);
+    console.log(this.order);
+
+    var response =  this.checkoutService.checkout(this.order);
     console.log(response);
     this.isLoadingModal = false;
     setTimeout(() => {
       (document.querySelector('.close') as HTMLElement).click();
-      (document.querySelector('#button-confirm') as HTMLElement).click();
+      this.openConfirmCheckoutModal(this.confirmModal);
     }, 3000);
   }
 

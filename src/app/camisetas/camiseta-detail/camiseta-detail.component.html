@@ -19,7 +19,7 @@
             <section id="size-color-container">
                 <div class="size-color-group">   
                     <label for="cars"><b>Cor</b></label>
-                    <select name="cor" class="size-color-options" formControlName="cor" [class.is-invalid-select] = "camisetaForm.get('cor').invalid && camisetaForm.get('cor').touched" (change)="verifyCamisetaForm()">       
+                    <select name="cor" class="size-color-options" formControlName="cor" [class.is-invalid-select] = "camisetaForm.get('cor').invalid && camisetaForm.get('cor').touched" >       
                         <option value="">-</option>                                   
                         <option value="{{cor}}" *ngFor="let cor of camiseta.cores">{{cor}}</option>                      
                     </select>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="size-color-group">   
                     <label for="tamanho"><b>Tamanho</b></label>
-                    <select name="tamanho" class="size-color-options" formControlName="tamanho" [class.is-invalid-select] = "camisetaForm.get('tamanho').invalid && camisetaForm.get('tamanho').touched" (change)="verifyCamisetaForm()">       
+                    <select name="tamanho" class="size-color-options" formControlName="tamanho" [class.is-invalid-select] = "camisetaForm.get('tamanho').invalid && camisetaForm.get('tamanho').touched" >       
                         <option value="">-</option>
                         <option value="{{tamanho}}" *ngFor="let tamanho of camiseta.tamanhos">{{tamanho}}</option>
                     </select>
@@ -39,5 +39,11 @@
                 </div>
             </section>
         </form>
+        <section id="checkout-group">
+            <app-amount [minimunAmount]=10 (selectedAmount)="onSelectedAmount($event)"></app-amount>
+            <div id="budget-button-box" [ngbTooltip]="camisetaForm.invalid ? 'Preencha os dados do produto para realizar o orçamento' : ''" placement="bottom">
+                <button id="budget-button" [disabled]="camisetaForm.invalid" (click)="checkout()">FAZER ORÇAMENTO</button>
+            </div>
+        </section>
     </div>
 </section>

@@ -1,0 +1,11 @@
+<div id="amount-box">
+    <section id="amount-container">
+        <div id="amount-number">
+            <p id="amount-p">{{amount}}</p>
+        </div>
+        <div id="amount-buttons">
+            <button class="amount-button first" (click)="addUnity()">+</button>
+            <button class="amount-button" (click)="removeUnity()" [ngbTooltip]="(amount == 10) ? 'Devido ao nosso fornecedor, a quantidade mínina de peças são 10.' : ''" placement="bottom" triggers="click:blur">-</button>
+        </div>
+    </section>
+</div>

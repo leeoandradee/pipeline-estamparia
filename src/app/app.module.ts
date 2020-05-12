@@ -24,7 +24,8 @@ import { CamisetaDetailComponent } from './camisetas/camiseta-detail/camiseta-de
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ProductOfferComponent } from './product-offer/product-offer.component';
 import { CamisetaOfferComponent } from './product-offer/camiseta-offer/camiseta-offer.component';
-import { CopoOfferComponent } from './product-offer/copo-offer/copo-offer.component'; 
+import { CopoOfferComponent } from './product-offer/copo-offer/copo-offer.component';
+import { AmountComponent } from './amount/amount.component'; 
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {}
 
@@ -44,6 +45,7 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {}
     ProductOfferComponent,
     CamisetaOfferComponent,
     CopoOfferComponent,
+    AmountComponent,
   ],
   imports: [
     BrowserModule,

@@ -114,48 +114,6 @@
         border-color: #dc3545;
     }
 
-    #amount-container {
-        width: 100%;
-        display: flex;
-        align-content: center;
-        align-items: center;
-        flex-direction: row;
-        border: solid 1px black;
-        border-radius: 3px;
-    }
-    
-    #amount-number {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        width: 60%;
-        border-right: solid 1px black;
-    }
-    
-    #amount-buttons {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-        width: 40%;
-    }
-    
-    .amount-button {
-        text-decoration: none;
-        border: none;
-        background: none;
-        width: 100%;
-    }
-    
-    .amount-button.first {
-        border-bottom: solid 1px black;
-    }
-    
-    #amount-p {
-        margin: 0;
-    }
-
     #budget-button {
         display: flex;
         justify-content: center;
@@ -317,54 +275,8 @@
         border-color: #dc3545;
     }
 
-    #amount-container {
-        width: 100%;
-        display: flex;
-        align-content: center;
-        align-items: center;
-        flex-direction: row;
-        border: solid 1px black;
-        border-radius: 3px;
-    }
-    
-    #amount-number {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        width: 60%;
-        border-right: solid 1px black;
-    }
-    
-    #amount-buttons {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-        width: 40%;
-    }
-    
-    .amount-button {
-        text-decoration: none;
-        border: none;
-        background: none;
-        width: 100%;
-    }
-    
-    .amount-button.first {
-        border-bottom: solid 1px black;
-    }
-    
-    #amount-p {
-        margin: 0;
-    }
-
     #spinner-span {
         display: none; 
-    }
-
-    #amount-box{
-        width: 30%;
     }
 
     #budget-button-box {
@@ -384,6 +296,7 @@
 
     .image-product {
         width: 100%;
+        max-height: 510px;
     }
 
     #description-container {
@@ -396,6 +309,7 @@
 
     #carousel-container {
         width: 40%;
+        max-width: 510px;
     }
 
     #budget-button {
@@ -502,53 +416,6 @@
         border-color: #dc3545;
     }
 
-    #amount-container {
-        width: 100%;
-        display: flex;
-        align-content: center;
-        align-items: center;
-        flex-direction: row;
-        border: solid 1px black;
-        border-radius: 3px;
-    }
-    
-    #amount-number {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        width: 60%;
-        border-right: solid 1px black;
-    }
-    
-    #amount-buttons {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-        width: 40%;
-    }
-    
-    .amount-button {
-        text-decoration: none;
-        border: none;
-        background: none;
-        width: 100%;
-    }
-    
-    .amount-button.first {
-        border-bottom: solid 1px black;
-    }
-    
-    #amount-p {
-        margin: 0;
-    }
- 
-    #budget-button-box {
-        display: flex;
-        justify-content: flex-end;
-    }
-
     #spinner-span {
         display: none; 
     }
@@ -559,10 +426,6 @@
 
     .label-type-color {
         margin-left: 1rem;
-    }
-
-    #amount-box{
-        width: 30%;
     }
 
     #budget-button-box {
