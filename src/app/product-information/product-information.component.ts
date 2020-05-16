@@ -82,7 +82,7 @@ export class ProductInformationComponent implements OnInit {
     this.getParams();
     if(this.paramsIsOk()) {
       this.product = this.getProductByTypeAndId(this.productType, this.productId);
-      if(this.product === null) {
+      if(this.product === null || this.product === undefined) {
         this.router.navigate(['erro']);
       }
     } else {

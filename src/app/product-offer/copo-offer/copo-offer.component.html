@@ -1,8 +1,12 @@
-<owl-carousel [options]="SlideOptions" [carouselClasses]="['owl-theme', 'sliding']" > 
-    <div class="product-container" *ngFor="let copo of copos" (click)="getProductInformation(copo.id, 'copos')"> 
-        <div class="product">
-            <img src="{{copo.imagens[0]}}" alt="foto camiseta" class="img-product"/>
-            <p class="desc-product">{{copo.nome}}</p>
-        </div>
+<div class="product-offer">
+    <div class="product-offerr">
+        <owl-carousel [options]="SlideOptions" [carouselClasses]="['owl-theme', 'sliding']" > 
+            <div class="product-container" *ngFor="let copo of copos" (click)="getProductInformation(copo.id, 'copos')"> 
+                <div class="product">
+                    <img src="{{copo.imagens[0]}}" alt="foto camiseta" class="img-product"/>
+                    <p class="desc-product"><b>{{copo.nome}}</b></p>
+                </div>
+            </div>
+        </owl-carousel>
     </div>
-</owl-carousel>
+</div>

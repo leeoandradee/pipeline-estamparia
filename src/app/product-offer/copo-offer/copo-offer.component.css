@@ -48,6 +48,10 @@
     .desc-product {
         font-family: 'Open Sans', sans-serif;
     }
+
+    .product-offer {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -97,6 +101,15 @@
 
     .desc-product {
         font-family: 'Open Sans', sans-serif;
+    }
+
+    .product-offer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .product-offerr {
+        width: 70%;
     }
 
 }   

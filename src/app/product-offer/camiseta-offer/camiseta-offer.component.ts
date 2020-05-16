@@ -17,7 +17,7 @@ export class CamisetaOfferComponent implements OnInit {
     items: 1, 
     dots: true, 
     nav: true, 
-    responsiveClass:true,  
+    responsiveClass:true,
     responsive:{
       0:{
           items:2,
@@ -28,7 +28,7 @@ export class CamisetaOfferComponent implements OnInit {
           nav:false
       },
       1000:{
-          items:4,
+          items:3,
           nav:true,
           loop:false
       }

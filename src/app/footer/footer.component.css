@@ -69,6 +69,20 @@
         font-family: 'Open Sans', sans-serif;
         text-align: center;
     }
+
+    #footer-links{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .footer-link {
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -144,5 +158,17 @@
         color: white;
         font-family: 'Open Sans', sans-serif;
         text-align: center;
+    }
+
+    #footer-links{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .footer-link {
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
     }
 }
