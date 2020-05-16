@@ -28,6 +28,8 @@ export class ProductInformationComponent implements OnInit {
   amount : number;
   isLoadingModal = false;
   formIsValid : boolean;
+  serviceMessage: string;
+  serviceImagePath: string;
   
 /*  VARIAVEIS NOVAS  */
 
@@ -80,13 +82,10 @@ export class ProductInformationComponent implements OnInit {
     this.getParams();
     if(this.paramsIsOk()) {
       this.product = this.getProductByTypeAndId(this.productType, this.productId);
-      console.log(this.product);
       if(this.product === null) {
-        console.log('erro')
         this.router.navigate(['erro']);
       }
     } else {
-      console.log('erro')
       this.router.navigate(['erro']);
     }
       this.spinner.hide();
@@ -143,15 +142,11 @@ export class ProductInformationComponent implements OnInit {
 
   /* MODAL */
   openCheckoutModal(content) {
-    this.modalService.open(content, {ariaLabelledBy: 'orçamento do pedido'}).result.then((result) => {
-      this.closeResult = `Closed with: ${result}`;
-    });
+    this.modalService.open(content, {ariaLabelledBy: 'orçamento do pedido'});
   }
 
   openConfirmCheckoutModal(content) {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
-      this.closeResult = `Closed with: ${result}`;
-    });
+    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'});
   }
 
   checkout() {
@@ -168,15 +163,21 @@ export class ProductInformationComponent implements OnInit {
     }
     this.order.cliente = client;
 
-    console.log(this.order);
-
-    var response =  this.checkoutService.checkout(this.order);
-    console.log(response);
-    this.isLoadingModal = false;
-    setTimeout(() => {
-      (document.querySelector('.close') as HTMLElement).click();
-      this.openConfirmCheckoutModal(this.confirmModal);
-    }, 3000);
+    this.checkoutService.checkout(this.order).subscribe(
+      data => {
+        this.serviceImagePath = "assets/images/icon/success.png";
+        this.serviceMessage = "Seu orçamento foi solicitado com sucesso! Em instantes entraremos em contato com você.";
+        (document.querySelector('.close') as HTMLElement).click();
+        this.openConfirmCheckoutModal(this.confirmModal);
+        this.isLoadingModal = false;
+      }, error => {
+        this.serviceImagePath = "assets/images/icon/warning.png";
+        this.serviceMessage = "Infelizmente o nosso sistema se encontra indisponível no momento! Tente novamente mais tarde.";
+        (document.querySelector('.close') as HTMLElement).click();
+        this.openConfirmCheckoutModal(this.confirmModal);
+        this.isLoadingModal = false;
+      }
+    );
   }
 
   get name() {

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { IProduct } from '../../model/product.model';
 import { Observable, throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
+import { catchError, retry, map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -12,16 +12,13 @@ export class CheckoutService {
 
   url = 'http://localhost:3000/sendmail';
 
-
   checkout (checkoutData) {
-    this.http.post(this.url, checkoutData).subscribe(
-      (data) => {
-        console.log(data);
-        return data;
-      },
-      (error) => {
-        console.log(error);
-        return error;
+    return this.http.post(this.url, checkoutData)
+    .pipe(
+      map(data => JSON.stringify(data)),
+      catchError((error) => {
+        return Observable.throw(error);
       })
+    );
   }
 }

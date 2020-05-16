@@ -122,14 +122,12 @@ type = "ball-clip-rotate"
 <ng-template #confirmModal let-modal>
     <div class="modal-body">
         <div style="display: flex; justify-content: space-around; flex-direction: row; align-items: center; align-content: center;">
-            <img src="assets/correct.png" aria-hidden="true" width="80" height="80"/>
-            <p style="margin-left: 10px;">Seu orçamento foi solicitado com sucesso!</p>
+            <img [src]="serviceImagePath" aria-hidden="true"/>
+            <p id="message-modal">{{serviceMessage}}</p>
         </div>
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Entendi</button>
     </div>
 </ng-template>
-
-<button id="button-confirm" class="btn btn-lg btn-outline-primary" style="display: none;" (click)="openConfirmCheckoutModal(contentt)">Launch demo modal</button>
 <!-- MODAL CONFIRM CHECKOUT -->

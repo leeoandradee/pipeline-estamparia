@@ -25,6 +25,7 @@
     "@types/jquery": "^3.3.34",
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.0",
+    "ng-sidebar": "^9.2.1",
     "ngx-mask": "^8.1.7",
     "ngx-owl-carousel": "^2.0.7",
     "ngx-spinner": "^9.0.1",

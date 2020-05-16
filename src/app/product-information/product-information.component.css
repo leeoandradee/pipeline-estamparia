@@ -223,6 +223,10 @@
     #spinner-span {
         display: none; 
     }
+
+    #message-modal {
+        margin-left: 20px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -282,7 +286,7 @@
     #budget-button {
         align-self: center;
         padding: 10px;
-        width: 80%;
+        width: 100%;
         border-radius: 3px;
         border: 2px solid black;
         background-color: black;
@@ -300,7 +304,7 @@
     #budget-button:disabled {
         align-self: center;
         padding: 10px;
-        width: 80%;
+        width: 100%;
         border-radius: 3px;
         border: 2px solid black;
         background-color: white;
@@ -437,6 +441,10 @@
 
     #spinner-span {
         display: none; 
+    }
+
+    #message-modal {
+        margin-left: 30px;
     }
 
 }
@@ -656,6 +664,10 @@
 
     #spinner-span {
         display: none; 
+    }
+
+    #message-modal {
+        margin-left: 30px;
     }
 
 }

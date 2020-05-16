@@ -26,6 +26,7 @@ import { ProductOfferComponent } from './product-offer/product-offer.component';
 import { CamisetaOfferComponent } from './product-offer/camiseta-offer/camiseta-offer.component';
 import { CopoOfferComponent } from './product-offer/copo-offer/copo-offer.component';
 import { AmountComponent } from './amount/amount.component'; 
+import { SidebarModule } from 'ng-sidebar';
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {}
 
@@ -57,6 +58,7 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {}
     NgxMaskModule.forRoot(options),
     ReactiveFormsModule,
     OwlModule,
+    SidebarModule.forRoot()
   ],
   providers: [
     ProductsService
