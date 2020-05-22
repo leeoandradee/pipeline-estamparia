@@ -66,9 +66,8 @@
                 "assets/images/copos/copos-long-drink/long-drink-combordas.jpg",
                 "assets/images/copos/copos-long-drink/long-drink-leitosos.jpg",
                 "assets/images/copos/copos-long-drink/long-drink-degrade.jpg",
-                "assets/images/copos/copos-long-drink/long-drink-metalizados.jpg",
                 "assets/images/copos/copos-long-drink/long-drink-neon.jpg",
-                "assets/images/copos/copos-long-drink/long-drink-translucidos.jpg"
+                "assets/images/copos/copos-long-drink/long-drink-translucido.jpg"
             ]
         },
         {
@@ -90,9 +89,9 @@
                 ]
             },
             "imagens": [
+                "assets/images/copos/copito/copito-cores.jpg",
                 "assets/images/copos/copito/copito-azul.jpg",
                 "assets/images/copos/copito/copito-amarelo.jpg",
-                "assets/images/copos/copito/copito-cores.jpg",
                 "assets/images/copos/copito/copito-transparente.jpg"
             ]
         },
@@ -113,9 +112,9 @@
                 "translucida": []
             },
             "imagens": [
-                "assets/images/copos//copo-bucks/copo-bucks-branco.png",
-                "assets/images/copos//copo-bucks/copo-bucks-cores.png",
-                "assets/images/copos//copo-bucks/copo-bucks-preto.png"
+                "assets/images/copos/copo-bucks/copo-bucks-cores.jpg",
+                "assets/images/copos/copo-bucks/copo-bucks-branco.jpg",
+                "assets/images/copos/copo-bucks/copo-bucks-preto.jpg"
             ]
         },
         {
@@ -142,8 +141,8 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/copo-chantily/copo-chantily-leitosos.jpg",
-                "assets/images/copos/copo-chantily/copo-chantily-translucidos.jpg"
+                "assets/images/copos/copo-chantily/copo-chantily-translucidos.jpg",
+                "assets/images/copos/copo-chantily/copo-chantily-leitosos.jpg"
             ]
         },
         {
@@ -165,8 +164,8 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/copinho-shot/copinho-shot.png",
-                "assets/images/copos/copinho-shot/copinho-cores.png"
+                "assets/images/copos/copinho-shot/copinho-shot-cores.jpg",
+                "assets/images/copos/copinho-shot/copinho-shot.jpg"
             ]
         },
         {
@@ -223,7 +222,8 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/copos-twister/copos-twister.jpg"
+                "assets/images/copos/copos-twister/copos-twister.jpg",
+                "assets/images/copos/copos-twister/copos-twister-cores.jpg"
             ]
         },
         {
@@ -241,9 +241,9 @@
                 "translucida": []
             },
             "imagens": [
-                "assets/images/copos/taça-bordô/taça-bordo-branca.png",
-                "assets/images/copos/taça-bordô/taça-bordo-cores.png",
-                "assets/images/copos/taça-bordô/taça-bordo-preta.png"
+                "assets/images/copos/taça-bordo/taça-bordo-cores.jpg",
+                "assets/images/copos/taça-bordo/taça-bordo-branca.jpg",
+                "assets/images/copos/taça-bordo/taça-bordo-preto.jpg"
             ]
         },
         {
@@ -262,9 +262,9 @@
                 "translucida": []
             },
             "imagens": [
-                "assets/images/copos/taça-vinho/taça-vinho-cores.png",
-                "assets/images/copos/taça-vinho/taça-vinho-preto.png",
-                "assets/images/copos/taça-vinho/taça-vinho-vermelha.png"
+                "assets/images/copos/taça-vinho/taça-vinho-cores.jpg",
+                "assets/images/copos/taça-vinho/taça-vinho-preta.jpg",
+                "assets/images/copos/taça-vinho/taça-vinho-vermelha.jpg"
             ]
         },
         {
@@ -360,11 +360,11 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/taça-de-champagne/taças-de-champagne.jpg",
-                "assets/images/copos/taça-de-champagne/taças-de-champagne-combordas.jpg",
-                "assets/images/copos/taça-de-champagne/taças-de-champagne-degrade.jpg",
-                "assets/images/copos/taça-de-champagne/taças-de-champagne-degrade.jpg",
-                "assets/images/copos/taça-de-champagne/taças-de-champagne-metalizada.jpg"
+                "assets/images/copos/taça-de-champagne/taça-de-champagne.jpg",
+                "assets/images/copos/taça-de-champagne/taça-de-champagne-combordas.jpg",
+                "assets/images/copos/taça-de-champagne/taça-de-champagne-degrade.jpg",
+                "assets/images/copos/taça-de-champagne/taça-de-champagne-degrade.jpg",
+                "assets/images/copos/taça-de-champagne/taça-de-champagne-metalizada.jpg"
             ]
         },
         {
@@ -452,10 +452,10 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/balde-de-gelo-7l/balde-de-gelo-7l-transparente.png",
-                "assets/images/copos/balde-de-gelo-7l/balde-de-gelo-branco.png",
-                "assets/images/copos/balde-de-gelo-7l/balde-de-gelo-cores.png",
-                "assets/images/copos/balde-de-gelo-7l/balde-de-gelo-preto.png"
+                "assets/images/copos/balde-de-gelo7l/balde-de-gelo-cores.jpg",
+                "assets/images/copos/balde-de-gelo7l/balde-de-gelo-7l-transparente.jpg",
+                "assets/images/copos/balde-de-gelo7l/balde-de-gelo-branco.jpg",
+                "assets/images/copos/balde-de-gelo7l/balde-de-gelo-preto.jpg"
             ]
         },
         {
@@ -497,7 +497,7 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/balde-de-pipoca/balde-de-pipoca-cores.png"
+                "assets/images/copos/balde-de-pipoca/balde-de-pipoca-cores.jpg"
             ]
         },
         {
@@ -513,7 +513,7 @@
                 "translucida": []
             },
             "imagens": [
-                "assets/images/copos/squeeze-plástico/squeeze-plastico.jpg"
+                "assets/images/copos/squeeze-plastico/squeeze-plastico.jpg"
             ]
         }
     ]

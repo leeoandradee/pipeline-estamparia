@@ -1,6 +1,6 @@
 <section id="copo-container">
     <owl-carousel [options]="SlideOptionsShirt" [carouselClasses]="['owl-theme', 'sliding']" id="carousel-container"> 
-            <img src="{{imagem}}" alt="foto camiseta" class="image-product" *ngFor="let imagem of copo.imagens"/>
+            <img src="{{imagem}}" alt="imagem {{copo.nome}}" class="image-product" *ngFor="let imagem of copo.imagens"/>
     </owl-carousel>  
 
     <div id="description-container">

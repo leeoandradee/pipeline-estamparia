@@ -1,7 +1,7 @@
 <section id="camiseta-container">
     <owl-carousel [options]="SlideOptionsShirt" [carouselClasses]="['owl-theme', 'sliding']" id="image-container"> 
         <div *ngFor="let imagem of camiseta.imagens"> 
-            <img src="{{imagem}}" alt="foto camiseta" class="img-product"/>
+            <img src="{{imagem}}" alt="imagem {{camiseta.nome}}" class="img-product"/>
         </div>
     </owl-carousel>  
 
