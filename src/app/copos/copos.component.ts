@@ -21,7 +21,6 @@ export class CoposComponent implements OnInit {
   ngOnInit() {
     this.spinner.show();
     this.copos = coposData.copo;
-    console.log(this.copos);
   }
 
   ngAfterViewInit() {
@@ -29,7 +28,6 @@ export class CoposComponent implements OnInit {
   }
 
   showProductInformation(productId: string, productType: string) {
-    console.log('entrou');
     this.router.navigate(['produto-info'], { queryParams: { 'productType': productType, 'productId': productId }});
   }
 

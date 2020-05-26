@@ -26,7 +26,6 @@ export class ProductsService {
   };
 
   getHomeProducts() {
-    console.log('Getting Home Products:');
     return productsHome;
   }
 
@@ -43,10 +42,8 @@ export class ProductsService {
 
   getCamisetaById(productId): IProduct {
     let camisetaAux: IProduct;
-    console.log(copos);
     camisetas.camiseta.forEach(camiseta => {
       if (camiseta.id === productId) {
-        console.log(camiseta);
         camisetaAux = camiseta;
         return;
       }
@@ -57,9 +54,7 @@ export class ProductsService {
   getCopoById(productId): ICopo {
     let copoAux: ICopo;
     copos.copo.forEach(copoI => {
-      console.log("COPO é:  " + copoI)
       if (copoI.id === productId) {
-        console.log(copoI);
         copoAux = copoI;
         return;
       }

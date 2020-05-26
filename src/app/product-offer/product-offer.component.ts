@@ -23,7 +23,6 @@ export class ProductOfferComponent implements OnInit {
   copos: ICopo[];
 
   ngOnInit() {
-    console.log(this.context);
     this.products = this.productsService.getHomeProducts();
     this.products = this.products.default;
     switch (this.context) {
@@ -41,7 +40,6 @@ export class ProductOfferComponent implements OnInit {
   }
 
   showProductInformation(productInformation: {productId: string, productType: string}) {
-    console.log('Tipo produto: ' + productInformation.productType);
     this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
     this.router.navigate(['/produto-info'], { queryParams: { 'productType': productInformation.productType, 'productId': productInformation.productId }}));
   }

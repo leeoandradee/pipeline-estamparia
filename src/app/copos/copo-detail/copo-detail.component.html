@@ -7,19 +7,23 @@
         <h2><b>{{copo.nome}}</b></h2>
         <form [formGroup]="copoForm">
             <section id="copo-information" >
-                <p><b>Tipos de cores</b></p>
-                <div class="copo-type-color" *ngFor="let tipoCor of copo.cores | keyvalue">
-                    <input type="radio" class="radio-type-color" name="tipoCor" formControlName="tipoCor" value="{{tipoCor.key}}" (change)="getColorTypeSelected(tipoCor.key)" *ngIf="tipoCor.value.length > 0">
-                    <label for="{{tipoCor.key}}" *ngIf="tipoCor.value.length > 0" class="label-type-color">{{tipoCor.key | uppercase}}</label>  
+                <p><b>Tipos de cores do copo</b></p>
+                <div class="copo-type-color" *ngFor="let tipoCor of Object.keys(copo.cores)">
+                    <input type="radio" class="radio-type-color" name="tipoCor" formControlName="tipoCor" value="{{tipoCor}}" (change)="getColorTypeSelected(tipoCor)" *ngIf="copo.cores[tipoCor].length > 0">
+                    <label for="{{tipoCor}}" *ngIf="copo.cores[tipoCor].length > 0" class="label-type-color">{{tipoCor | uppercase}}</label>  
                 </div>
                 <div class="cores-group">
-                    <label for="cor"><b>Cores</b></label>
+                    <label for="cor"><b>Cores do copo</b></label>
                     <select name="cor" formControlName="cor" class="size-color-options">     
                         <option [value]="cor" *ngFor="let cor of colors">{{cor}}</option>                                                  
                     </select>
                     <div *ngIf="(cor.invalid && cor.touched) || cor.dirty">
                         <small *ngIf="cor.errors?.required" class="text-danger">A cor do copo é obrigatório</small>
                     </div>
+                </div>
+                <div class="cores-group">
+                    <label><b>Quantidade de cores da gravação</b></label>
+                    <input type="number" class="form-control" id="coresGravacao" formControlName="coresGravacao" name="coresGravacao" onKeyPress="if(this.value.length==2) return false;"/>  
                 </div>
             </section>
         </form>

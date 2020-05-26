@@ -13,11 +13,11 @@ type = "ball-clip-rotate"
 
 <section class="main-products">
     <div class="products-content">
-        <h1 class="product-title">COPOS</h1>
+        <h1 class="product-title">COPOS PERSONALIZADOS</h1>
         <section class="product-grid" *ngIf="copos">
-            <div class="product" *ngFor="let copo of copos" (click)="showProductInformation(copo.id, 'copos')">        
-                <img class="product-img" src="{{copo.imagens[0]}}" alt="imagem {{copo.nome}}"/>
-                <p class="product-name">{{copo.nome}}</p>
+            <div class="product" *ngFor="let copo of copos" (click)="showProductInformation(copo.id, 'copos')" attr.aria-label="{{copo.nome}}">        
+                <img class="product-img" src="{{copo.imagens[0]}}" alt="imagem {{copo.nome}}" aria-hidden="true"/>
+                <p class="product-name" aria-hidden="true">{{copo.nome}}</p>
             </div>
         </section>
     </div>

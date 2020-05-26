@@ -12,7 +12,7 @@ export class CopoDetailComponent implements OnInit {
   constructor() { }
 
   @Input("copo") copo : ICopo;
-  @Output() copoDetail = new EventEmitter<{typeColor: string, color: string, amount: number}>();
+  @Output() copoDetail = new EventEmitter<{typeColor: string, color: string, amount: number, colorQuantity: number}>();
 
   SlideOptionsShirt = { 
     items: 1, 
@@ -20,11 +20,15 @@ export class CopoDetailComponent implements OnInit {
     nav: false,
   };
 
+  Object = Object;
+
   copoForm = new FormGroup({
     cor: new FormControl([null,'',
       Validators.required]),
     tipoCor: new FormControl('',[
-      Validators.required])
+      Validators.required]),
+    coresGravacao: new FormControl('',[
+      Validators.required]) 
   });
 
   typeColorSelected : "";
@@ -32,12 +36,10 @@ export class CopoDetailComponent implements OnInit {
   amount : number;
 
   ngOnInit() {
-    console.log(this.copo);
     this.colors = this.copo.cores.degrade;
   }
 
   getColorTypeSelected(typeColorSelected) {
-    console.log("Cor selecionada: " + typeColorSelected);
     this.typeColorSelected = typeColorSelected;
 
     switch (this.typeColorSelected.toUpperCase()) {
@@ -70,13 +72,16 @@ export class CopoDetailComponent implements OnInit {
     return this.copoForm.get('tipoCor')
   }
 
+  get coresGravacao() {
+    return this.copoForm.get('coresGravacao')
+  }
+
   onSelectedAmount(selectedAmount : {selectedAmount: number}) {
     this.amount = selectedAmount.selectedAmount;
   }
 
   checkout() {
-    console.log('foi')
-    this.copoDetail.emit({amount: this.amount, color: this.cor.value, typeColor: this.tipoCor.value});
+    this.copoDetail.emit({amount: this.amount, color: this.cor.value, typeColor: this.tipoCor.value, colorQuantity: this.coresGravacao.value});
   }
 
 }

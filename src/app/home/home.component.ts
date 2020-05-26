@@ -8,7 +8,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 })
 export class HomeComponent implements OnInit, AfterViewInit {
 
-  bannerImages = ["assets/images/banner-camiseta.jpg", "assets/images/banner-canecas.jpg"];
+  bannerImages = ["http://cdn.camisapersonalizadas.com.br/images/banner-camiseta.jpg", "http://cdn.camisapersonalizadas.com.br/images/banner-canecas.jpg"];
 
   SlideOptions = { 
     items: 1, 
@@ -25,6 +25,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ) { }
 
   ngOnInit() {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
     this.spinner.show();
   }
 

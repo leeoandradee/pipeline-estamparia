@@ -4,4 +4,5 @@ export class ICopoOrder {
     styleColor : string;
     color : string;
     quantity : string;
+    colorQuantity: number;
 }

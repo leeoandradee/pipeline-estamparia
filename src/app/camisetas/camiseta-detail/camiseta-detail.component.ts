@@ -12,7 +12,7 @@ export class CamisetaDetailComponent implements OnInit {
   constructor() { }
 
   @Input("camiseta") camiseta: IProduct;
-  @Output() camisetaDetail = new EventEmitter<{color: string, amount: number, size: number}>();
+  @Output() camisetaDetail = new EventEmitter<{color: string, amount: number, size: number, colorQuantity: number}>();
 
   corIsValid : boolean;
   tamanhoIsValid : boolean;
@@ -29,12 +29,13 @@ export class CamisetaDetailComponent implements OnInit {
       Validators.required]),
     tamanho: new FormControl('',[
       Validators.required]),
+    coresGravacao: new FormControl('',[
+      Validators.required]),
   });
 
   amount : number;
 
   ngOnInit() {
-    console.log(this.camiseta)
     this.camisetaForm.touched
   }
 
@@ -46,12 +47,16 @@ export class CamisetaDetailComponent implements OnInit {
     return this.camisetaForm.get('tamanho')
   }
 
+  get coresGravacao() {
+    return this.camisetaForm.get('coresGravacao')
+  }
+
   onSelectedAmount(selectedAmount : {selectedAmount: number}) {
     this.amount = selectedAmount.selectedAmount;
   }
 
   checkout() {
-    this.camisetaDetail.emit({color: this.cor.value, amount: this.amount, size: this.tamanho.value})
+    this.camisetaDetail.emit({color: this.cor.value, amount: this.amount, size: this.tamanho.value, colorQuantity: this.coresGravacao.value})
   }
 
 }

@@ -19,7 +19,6 @@ export class MenuComponent implements OnInit {
 
     if (x.matches) {
       this.isMobileMenu = true;
-      console.log(this.isMobileMenu);
     }
 
   }

@@ -5,4 +5,5 @@ export class ICamisetaOrder {
     size : string;
     color : string;
     quantity : string;
+    colorQuantity: number;
 }

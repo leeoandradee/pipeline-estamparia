@@ -30,6 +30,7 @@ export class ProductInformationComponent implements OnInit {
   formIsValid : boolean;
   serviceMessage: string;
   serviceImagePath: string;
+  redirectAfterBudgetUrl : string;
   
 /*  VARIAVEIS NOVAS  */
 
@@ -117,25 +118,27 @@ export class ProductInformationComponent implements OnInit {
     return false;
   }
 
-  onCopoCheckout(copoDetail:{amount: number, color: string, typeColor: string}) {
+  onCopoCheckout(copoDetail:{amount: number, color: string, typeColor: string, colorQuantity: number}) {
     this.order.copo = {
       id : this.product.id,
-      name : this.product.name,
+      name : this.product.nome,
       styleColor : copoDetail.typeColor,
       color : copoDetail.color, 
-      quantity : copoDetail.amount.toString()
+      quantity : copoDetail.amount.toString(),
+      colorQuantity: copoDetail.colorQuantity
     }
     this.openCheckoutModal(this.checkoutModal);
   }
 
-  onCamisetaCheckout(camisetaDetail:{color: string, amount: number, size: number}) {
+  onCamisetaCheckout(camisetaDetail:{color: string, amount: number, size: number, colorQuantity: number}) {
     this.order.camiseta = {
       id : this.product.id,
       name : this.product.nome,
       style : this.product.modelo,
       size: camisetaDetail.size.toString(),
       color : camisetaDetail.color, 
-      quantity : camisetaDetail.amount.toString()
+      quantity : camisetaDetail.amount.toString(),
+      colorQuantity: camisetaDetail.colorQuantity
     }
     this.openCheckoutModal(this.checkoutModal);
   }
@@ -146,7 +149,11 @@ export class ProductInformationComponent implements OnInit {
   }
 
   openConfirmCheckoutModal(content) {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'});
+    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
+      this.router.navigate([this.redirectAfterBudgetUrl]);
+    }, (reason) => {
+      this.router.navigate([this.redirectAfterBudgetUrl]);
+    });
   }
 
   checkout() {
@@ -157,27 +164,49 @@ export class ProductInformationComponent implements OnInit {
       name : this.name.value,
       lastName : this.lastName.value,
       email : this.email.value,
-      celphone : this.phone.value,
+      cellphone : this.phone.value,
       cep : this.cep.value,
       notes : this.notes.value
     }
     this.order.cliente = client;
 
-    this.checkoutService.checkout(this.order).subscribe(
-      data => {
-        this.serviceImagePath = "assets/images/icon/success.png";
-        this.serviceMessage = "Seu orçamento foi solicitado com sucesso! Em instantes entraremos em contato com você.";
-        (document.querySelector('.close') as HTMLElement).click();
-        this.openConfirmCheckoutModal(this.confirmModal);
-        this.isLoadingModal = false;
-      }, error => {
-        this.serviceImagePath = "assets/images/icon/warning.png";
-        this.serviceMessage = "Infelizmente o nosso sistema se encontra indisponível no momento! Tente novamente mais tarde.";
-        (document.querySelector('.close') as HTMLElement).click();
-        this.openConfirmCheckoutModal(this.confirmModal);
-        this.isLoadingModal = false;
-      }
-    );
+    if(this.order.camiseta !== null && this.order.camiseta !== undefined) {
+      this.checkoutService.camisetaCheckout(this.order).subscribe(
+        data => {
+          this.serviceImagePath = "http://cdn.camisapersonalizadas.com.br/images/icon/success.png";
+          this.serviceMessage = "Seu orçamento foi solicitado com sucesso! Em instantes entraremos em contato com você.";
+          this.redirectAfterBudgetUrl = '/';
+          (document.querySelector('.close') as HTMLElement).click();
+          this.openConfirmCheckoutModal(this.confirmModal);
+          this.isLoadingModal = false;
+        }, error => {
+          this.serviceImagePath = "http://cdn.camisapersonalizadas.com.br/images/icon/warning.png";
+          this.serviceMessage = "Infelizmente o nosso sistema se encontra indisponível no momento! Tente novamente mais tarde.";
+          this.redirectAfterBudgetUrl = '/produto-info';
+          (document.querySelector('.close') as HTMLElement).click();
+          this.openConfirmCheckoutModal(this.confirmModal);
+          this.isLoadingModal = false;
+        }
+      );
+    } else {
+      this.checkoutService.copoCheckout(this.order).subscribe(
+        data => {
+          this.serviceImagePath = "http://cdn.camisapersonalizadas.com.br/images/icon/success.png";
+          this.serviceMessage = "Seu orçamento foi solicitado com sucesso! Em instantes entraremos em contato com você.";
+          this.redirectAfterBudgetUrl = '/';
+          (document.querySelector('.close') as HTMLElement).click();
+          this.openConfirmCheckoutModal(this.confirmModal);
+          this.isLoadingModal = false;
+        }, error => {
+          this.serviceImagePath = "http://cdn.camisapersonalizadas.com.br/images/icon/warning.png";
+          this.serviceMessage = "Infelizmente o nosso sistema se encontra indisponível no momento! Tente novamente mais tarde.";
+          this.redirectAfterBudgetUrl = '/produto-info';
+          (document.querySelector('.close') as HTMLElement).click();
+          this.openConfirmCheckoutModal(this.confirmModal);
+          this.isLoadingModal = false;
+        }
+      );
+    }
   }
 
   get name() {

@@ -9,13 +9,13 @@
             "sexo" : "unisex",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "assets/images/camisetas/camisetas-basica/camiseta-basica-azul-marinho.png",
-                "assets/images/camisetas/camisetas-basica/camiseta-basica-cinza-mescla.png",
-                "assets/images/camisetas/camisetas-basica/camiseta-basica-marrom.png",
-                "assets/images/camisetas/camisetas-basica/camiseta-basica-verde-limão.jpg", 
-                "assets/images/camisetas/camisetas-basica/camiseta-basica-verde-musgo.png", 
-                "assets/images/camisetas/camisetas-basica/camiseta-basica-vinho.png",
-                "assets/images/camisetas/camisetas-basica/camiseta-basica-cores.png" 		 
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-azul-marinho.png",
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-cinza-mescla.png",
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-marrom.png",
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-verde-limão.jpg", 
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-verde-musgo.png", 
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-vinho.png",
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-cores.png" 		 
 
             ]
         },
@@ -28,10 +28,10 @@
             "sexo" : "unisex",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "assets/images/camisetas/gola-v/gola-v-amarela.jpg",
-                "assets/images/camisetas/gola-v/gola-v-laranja.jpg",
-                "assets/images/camisetas/gola-v/gola-v-verde.jpg",
-                "assets/images/camisetas/gola-v/gola-v-vermelha.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v/gola-v-amarela.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v/gola-v-laranja.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v/gola-v-verde.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v/gola-v-vermelha.jpg"
             ]
         },
         {
@@ -43,9 +43,9 @@
             "sexo" : "unisex",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "assets/images/camisetas/basica-juvenil/basica-juvenil-laranja.jpg",
-                "assets/images/camisetas/basica-juvenil/basica-juvenil-rosa.jpg",
-                "assets/images/camisetas/basica-juvenil/basica-juvenil-rosa-claro.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/basica-juvenil/basica-juvenil-laranja.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/basica-juvenil/basica-juvenil-rosa.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/basica-juvenil/basica-juvenil-rosa-claro.jpg"
             ]
         },
         {
@@ -57,10 +57,10 @@
             "sexo" : "masculino",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "assets/images/camisetas/polo-piquet/masculina/polo-piquet-laranja.jpg",
-                "assets/images/camisetas/polo-piquet/masculina/polo-piquet-azul.jpg",
-                "assets/images/camisetas/polo-piquet/masculina/polo-piquet-verde.jpg",
-                "assets/images/camisetas/polo-piquet/masculina/polo-piquet-vermelha.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/masculina/polo-piquet-laranja.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/masculina/polo-piquet-azul.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/masculina/polo-piquet-verde.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/masculina/polo-piquet-vermelha.jpg"
             ]
         },
         {
@@ -72,10 +72,10 @@
             "sexo" : "feminina",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "assets/images/camisetas/polo-piquet/feminina/polo-piquet-feminina-salmao.jpg",
-                "assets/images/camisetas/polo-piquet/feminina/polo-piquet-feminina-amarela.jpg",
-                "assets/images/camisetas/polo-piquet/feminina/polo-piquet-feminina-azul.jpg",
-                "assets/images/camisetas/polo-piquet/feminina/polo-piquet-feminina-rosa.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-salmao.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-amarela.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-azul.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-rosa.jpg"
             ]
         }
     ],
@@ -104,8 +104,8 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/copo-chantily/copo-chantily-translucidos.jpg",
-                "assets/images/copos/copo-chantily/copo-chantily-leitosos.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copo-chantily/copo-chantily-translucidos.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copo-chantily/copo-chantily-leitosos.jpg"
             ]
         },
         {
@@ -132,10 +132,10 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/copos-twister-tampa-canudo/copos-twister-coloridos.jpg",
-                "assets/images/copos/copos-twister-tampa-canudo/copos-twister-leitosos.jpg",
-                "assets/images/copos/copos-twister-tampa-canudo/copos-twister-neon.jpg",
-                "assets/images/copos/copos-twister-tampa-canudo/copos-twister-translucidos.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-twister-tampa-canudo/copos-twister-coloridos.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-twister-tampa-canudo/copos-twister-leitosos.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-twister-tampa-canudo/copos-twister-neon.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-twister-tampa-canudo/copos-twister-translucidos.jpg"
             ]
         },
         {
@@ -162,8 +162,8 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/copos-twister/copos-twister.jpg",
-                "assets/images/copos/copos-twister/copos-twister-cores.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-twister/copos-twister.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-twister/copos-twister-cores.jpg"
             ]
         },
         {
@@ -179,7 +179,7 @@
                 "translucida": []
             },
             "imagens": [
-                "assets/images/copos/squeeze-plastico/squeeze-plastico.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/squeeze-plastico/squeeze-plastico.jpg"
             ]
         }
     ]

@@ -36,11 +36,9 @@ export class CopoOfferComponent implements OnInit {
   };
 
   ngOnInit() {
-    console.log(this.copos);
   }
 
   getProductInformation(productId: string, productType: string) {
-    console.log(productType);
     this.copoInformation.emit({productId: productId, productType: productType})
   }
 

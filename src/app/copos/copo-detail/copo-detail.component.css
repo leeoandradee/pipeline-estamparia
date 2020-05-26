@@ -144,6 +144,10 @@
     .label-type-color {
         margin-left: 2rem;
     }
+
+    #coresGravacao {
+        border: solid black 1px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -283,6 +287,9 @@
         width: 60%;
     }
 
+    #coresGravacao {
+        border: solid black 1px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -430,6 +437,10 @@
 
     #budget-button-box {
         width: 60%;
+    }
+
+    #coresGravacao {
+        border: solid black 1px;
     }
 
 }

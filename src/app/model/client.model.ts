@@ -2,7 +2,7 @@ export class IClient {
     name : string;
     lastName : string;
     email : string;
-    celphone : string;
+    cellphone : string;
     cep : string;
     notes : string;
 }

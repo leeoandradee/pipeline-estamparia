@@ -63,11 +63,11 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/copos-long-drink/long-drink-combordas.jpg",
-                "assets/images/copos/copos-long-drink/long-drink-leitosos.jpg",
-                "assets/images/copos/copos-long-drink/long-drink-degrade.jpg",
-                "assets/images/copos/copos-long-drink/long-drink-neon.jpg",
-                "assets/images/copos/copos-long-drink/long-drink-translucido.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-long-drink/long-drink-combordas.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-long-drink/long-drink-leitosos.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-long-drink/long-drink-degrade.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-long-drink/long-drink-neon.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-long-drink/long-drink-translucido.jpg"
             ]
         },
         {
@@ -89,10 +89,10 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/copito/copito-cores.jpg",
-                "assets/images/copos/copito/copito-azul.jpg",
-                "assets/images/copos/copito/copito-amarelo.jpg",
-                "assets/images/copos/copito/copito-transparente.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copito/copito-cores.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copito/copito-azul.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copito/copito-amarelo.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copito/copito-transparente.jpg"
             ]
         },
         {
@@ -112,9 +112,9 @@
                 "translucida": []
             },
             "imagens": [
-                "assets/images/copos/copo-bucks/copo-bucks-cores.jpg",
-                "assets/images/copos/copo-bucks/copo-bucks-branco.jpg",
-                "assets/images/copos/copo-bucks/copo-bucks-preto.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copo-bucks/copo-bucks-cores.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copo-bucks/copo-bucks-branco.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copo-bucks/copo-bucks-preto.jpg"
             ]
         },
         {
@@ -141,8 +141,8 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/copo-chantily/copo-chantily-translucidos.jpg",
-                "assets/images/copos/copo-chantily/copo-chantily-leitosos.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copo-chantily/copo-chantily-translucidos.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copo-chantily/copo-chantily-leitosos.jpg"
             ]
         },
         {
@@ -164,8 +164,8 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/copinho-shot/copinho-shot-cores.jpg",
-                "assets/images/copos/copinho-shot/copinho-shot.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copinho-shot/copinho-shot-cores.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copinho-shot/copinho-shot.jpg"
             ]
         },
         {
@@ -192,10 +192,10 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/copos-twister-tampa-canudo/copos-twister-coloridos.jpg",
-                "assets/images/copos/copos-twister-tampa-canudo/copos-twister-leitosos.jpg",
-                "assets/images/copos/copos-twister-tampa-canudo/copos-twister-neon.jpg",
-                "assets/images/copos/copos-twister-tampa-canudo/copos-twister-translucidos.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-twister-tampa-canudo/copos-twister-coloridos.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-twister-tampa-canudo/copos-twister-leitosos.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-twister-tampa-canudo/copos-twister-neon.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-twister-tampa-canudo/copos-twister-translucidos.jpg"
             ]
         },
         {
@@ -222,8 +222,8 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/copos-twister/copos-twister.jpg",
-                "assets/images/copos/copos-twister/copos-twister-cores.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-twister/copos-twister.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/copos-twister/copos-twister-cores.jpg"
             ]
         },
         {
@@ -241,14 +241,14 @@
                 "translucida": []
             },
             "imagens": [
-                "assets/images/copos/taça-bordo/taça-bordo-cores.jpg",
-                "assets/images/copos/taça-bordo/taça-bordo-branca.jpg",
-                "assets/images/copos/taça-bordo/taça-bordo-preto.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/taca-bordo/taca-bordo-cores.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/taca-bordo/taca-bordo-branca.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/taca-bordo/taca-bordo-preto.jpg"
             ]
         },
         {
             "id": "9",
-            "nome": "Taça de Vinho 290ml ",
+            "nome": "Taca de Vinho 290ml ",
             "cores": {
                 "degrade": [],
                 "leitosas": [
@@ -262,9 +262,9 @@
                 "translucida": []
             },
             "imagens": [
-                "assets/images/copos/taça-vinho/taça-vinho-cores.jpg",
-                "assets/images/copos/taça-vinho/taça-vinho-preta.jpg",
-                "assets/images/copos/taça-vinho/taça-vinho-vermelha.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/taca-vinho/taca-vinho-cores.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/taca-vinho/taca-vinho-preta.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/taca-vinho/taca-vinho-vermelha.jpg"
             ]
         },
         {
@@ -309,10 +309,10 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/taças-gin/taças-de-gin-combordas.jpg",
-                "assets/images/copos/taças-gin/taças-de-gin-cores.jpg",
-                "assets/images/copos/taças-gin/taças-de-gin-metalizadas.jpg",
-                "assets/images/copos/taças-gin/taças-de-gin-degrade.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/tacas-gin/tacas-de-gin-combordas.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/tacas-gin/tacas-de-gin-cores.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/tacas-gin/tacas-de-gin-metalizadas.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/tacas-gin/tacas-de-gin-degrade.jpg"
             ]
         },
         {
@@ -360,11 +360,11 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/taça-de-champagne/taça-de-champagne.jpg",
-                "assets/images/copos/taça-de-champagne/taça-de-champagne-combordas.jpg",
-                "assets/images/copos/taça-de-champagne/taça-de-champagne-degrade.jpg",
-                "assets/images/copos/taça-de-champagne/taça-de-champagne-degrade.jpg",
-                "assets/images/copos/taça-de-champagne/taça-de-champagne-metalizada.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/taca-de-champagne/taca-de-champagne.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/taca-de-champagne/taca-de-champagne-combordas.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/taca-de-champagne/taca-de-champagne-degrade.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/taca-de-champagne/taca-de-champagne-degrade.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/taca-de-champagne/taca-de-champagne-metalizada.jpg"
             ]
         },
         {
@@ -404,9 +404,9 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/caneca-de-chopp/caneca-de-chopp-degrade.jpg",
-                "assets/images/copos/caneca-de-chopp/caneca-de-chopp-translucidas.jpg",
-                "assets/images/copos/caneca-de-chopp/caneca-de-chopp-cores.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/caneca-de-chopp/caneca-de-chopp-degrade.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/caneca-de-chopp/caneca-de-chopp-translucidas.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/caneca-de-chopp/caneca-de-chopp-cores.jpg"
             ]
         },
         {
@@ -428,10 +428,10 @@
                 "translucida": []
             },
             "imagens": [
-                "assets/images/copos/caneca-aluminio/caneca-aluminio-azul.jpg",
-                "assets/images/copos/caneca-aluminio/caneca-aluminio-cores.jpg",
-                "assets/images/copos/caneca-aluminio/caneca-aluminio-preta.jpg",
-                "assets/images/copos/caneca-aluminio/caneca-aluminio-vermelha.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/caneca-aluminio/caneca-aluminio-azul.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/caneca-aluminio/caneca-aluminio-cores.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/caneca-aluminio/caneca-aluminio-preta.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/caneca-aluminio/caneca-aluminio-vermelha.jpg"
             ]
         },
         {
@@ -452,10 +452,10 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/balde-de-gelo7l/balde-de-gelo-cores.jpg",
-                "assets/images/copos/balde-de-gelo7l/balde-de-gelo-7l-transparente.jpg",
-                "assets/images/copos/balde-de-gelo7l/balde-de-gelo-branco.jpg",
-                "assets/images/copos/balde-de-gelo7l/balde-de-gelo-preto.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/balde-de-gelo7l/balde-de-gelo-cores.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/balde-de-gelo7l/balde-de-gelo-7l-transparente.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/balde-de-gelo7l/balde-de-gelo-branco.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/balde-de-gelo7l/balde-de-gelo-preto.jpg"
             ]
         },
         {
@@ -475,9 +475,9 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/balde-de-gelo-1l/balde-de-gelo-azul.jpg",
-                "assets/images/copos/balde-de-gelo-1l/balde-de-gelo-preto.jpg",
-                "assets/images/copos/balde-de-gelo-1l/balde-de-gelo-vermelho.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/balde-de-gelo-1l/balde-de-gelo-azul.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/balde-de-gelo-1l/balde-de-gelo-preto.jpg",
+                "http://cdn.camisapersonalizadas.com.br//images/copos/balde-de-gelo-1l/balde-de-gelo-vermelho.jpg"
             ]
         },
         {
@@ -497,7 +497,7 @@
                 ]
             },
             "imagens": [
-                "assets/images/copos/balde-de-pipoca/balde-de-pipoca-cores.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/balde-de-pipoca/balde-de-pipoca-cores.jpg"
             ]
         },
         {
@@ -513,7 +513,7 @@
                 "translucida": []
             },
             "imagens": [
-                "assets/images/copos/squeeze-plastico/squeeze-plastico.jpg"
+                "http://cdn.camisapersonalizadas.com.br//images/copos/squeeze-plastico/squeeze-plastico.jpg"
             ]
         }
     ]

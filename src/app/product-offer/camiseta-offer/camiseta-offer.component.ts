@@ -36,11 +36,9 @@ export class CamisetaOfferComponent implements OnInit {
   };
 
   ngOnInit() {
-    console.log(this.camisetas);
   }
 
   getProductInformation(productId: string, productType: string) {
-    console.log(productType);
     this.camisetaInformation.emit({productId: productId, productType: productType})
   }
 

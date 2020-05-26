@@ -11,7 +11,7 @@ type = "ball-clip-rotate"
 
 <app-menu></app-menu>
 
-<owl-carousel [options]="SlideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" id="banner-container-box"> 
+<owl-carousel [options]="SlideOptions" [carouselClasses]="['owl-theme', 'sliding']" id="banner-container-box"> 
     <div class="picsum-img-wrapper" *ngFor="let bannerImage of bannerImages" id="banner-container">
         <img class="banner-image" src="{{bannerImage}}" alt="Random second slide">
     </div>

@@ -10,10 +10,20 @@ import { catchError, retry, map } from 'rxjs/operators';
 export class CheckoutService {
   constructor(private http: HttpClient) { }
 
-  url = 'http://localhost:3000/sendmail';
+  url = 'https://pipeline-estamparia-api.herokuapp.com';
 
-  checkout (checkoutData) {
-    return this.http.post(this.url, checkoutData)
+  copoCheckout (checkoutData) {
+    return this.http.post(this.url + '/orcamento/copo', checkoutData)
+    .pipe(
+      map(data => JSON.stringify(data)),
+      catchError((error) => {
+        return Observable.throw(error);
+      })
+    );
+  }
+
+  camisetaCheckout (checkoutData) {
+    return this.http.post(this.url + '/orcamento/camiseta', checkoutData)
     .pipe(
       map(data => JSON.stringify(data)),
       catchError((error) => {

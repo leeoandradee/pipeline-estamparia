@@ -18,7 +18,7 @@
         <form [formGroup]="camisetaForm">
             <section id="size-color-container">
                 <div class="size-color-group">   
-                    <label for="cars"><b>Cor</b></label>
+                    <label for="cars"><b>Cores da camiseta</b></label>
                     <select name="cor" class="size-color-options" formControlName="cor" [class.is-invalid-select] = "camisetaForm.get('cor').invalid && camisetaForm.get('cor').touched" >       
                         <option value="">-</option>                                   
                         <option value="{{cor}}" *ngFor="let cor of camiseta.cores">{{cor}}</option>                      
@@ -38,6 +38,10 @@
                     </div>
                 </div>
             </section>
+            <div class="size-color-group" id="cores-gravacao-container">
+                <label><b>Quantidade de cores da gravação</b></label>
+                <input type="number" class="form-control" id="coresGravacao" formControlName="coresGravacao" name="coresGravacao" onKeyPress="if(this.value.length==2) return false;"/>  
+            </div>
         </form>
         <section id="checkout-group">
             <app-amount [minimunAmount]=10 (selectedAmount)="onSelectedAmount($event)"></app-amount>

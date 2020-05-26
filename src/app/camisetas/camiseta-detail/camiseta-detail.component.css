@@ -227,6 +227,15 @@
     #spinner-span {
         display: none; 
     }
+
+    #coresGravacao {
+        border: solid black 1px;
+        width: 100%;
+    }
+
+    #cores-gravacao-container {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -449,6 +458,15 @@
 
     #spinner-span {
         display: none; 
+    }
+
+    #coresGravacao {
+        border: solid black 1px;
+        width: 100%;
+    }
+
+    #cores-gravacao-container {
+        width: 100%;
     }
 
 }
@@ -677,4 +695,12 @@
         display: none; 
     }
 
+    #coresGravacao {
+        border: solid black 1px;
+        width: 100%;
+    }
+
+    #cores-gravacao-container {
+        width: 100%;
+    }
 }

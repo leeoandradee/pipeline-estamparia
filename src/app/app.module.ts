@@ -12,7 +12,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CamisetasComponent } from './camisetas/camisetas.component';
 import { CoposComponent } from './copos/copos.component';
 import { ErrorComponent } from './error/error.component';
-import { NgxSpinnerModule } from "ngx-spinner";
+import { NgxSpinnerModule, NgxSpinnerService } from "ngx-spinner";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxMaskModule } from 'ngx-mask';
 import { IConfig } from 'ngx-mask';
@@ -21,12 +21,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { OwlModule } from 'ngx-owl-carousel';
 import { CopoDetailComponent } from './copos/copo-detail/copo-detail.component';
 import { CamisetaDetailComponent } from './camisetas/camiseta-detail/camiseta-detail.component';
-import { CheckoutComponent } from './checkout/checkout.component';
 import { ProductOfferComponent } from './product-offer/product-offer.component';
 import { CamisetaOfferComponent } from './product-offer/camiseta-offer/camiseta-offer.component';
 import { CopoOfferComponent } from './product-offer/copo-offer/copo-offer.component';
 import { AmountComponent } from './amount/amount.component'; 
 import { SidebarModule } from 'ng-sidebar';
+import { CheckoutService } from './services/checkout-service/checkout-service.service';
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {}
 
@@ -42,7 +42,6 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {}
     ErrorComponent,
     CopoDetailComponent,
     CamisetaDetailComponent,
-    CheckoutComponent,
     ProductOfferComponent,
     CamisetaOfferComponent,
     CopoOfferComponent,
@@ -61,7 +60,9 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {}
     SidebarModule.forRoot()
   ],
   providers: [
-    ProductsService
+    ProductsService,
+    CheckoutService,
+    NgxSpinnerService
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
