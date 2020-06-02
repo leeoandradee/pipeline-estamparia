@@ -173,14 +173,14 @@ export class ProductInformationComponent implements OnInit {
     if(this.order.camiseta !== null && this.order.camiseta !== undefined) {
       this.checkoutService.camisetaCheckout(this.order).subscribe(
         data => {
-          this.serviceImagePath = "http://cdn.camisapersonalizadas.com.br/images/icon/success.png";
+          this.serviceImagePath = "https://cdn.camisapersonalizadas.com.br/images/icon/success.png";
           this.serviceMessage = "Seu orçamento foi solicitado com sucesso! Em instantes entraremos em contato com você.";
           this.redirectAfterBudgetUrl = '/';
           (document.querySelector('.close') as HTMLElement).click();
           this.openConfirmCheckoutModal(this.confirmModal);
           this.isLoadingModal = false;
         }, error => {
-          this.serviceImagePath = "http://cdn.camisapersonalizadas.com.br/images/icon/warning.png";
+          this.serviceImagePath = "https://cdn.camisapersonalizadas.com.br/images/icon/warning.png";
           this.serviceMessage = "Infelizmente o nosso sistema se encontra indisponível no momento! Tente novamente mais tarde.";
           this.redirectAfterBudgetUrl = '/produto-info';
           (document.querySelector('.close') as HTMLElement).click();
@@ -191,14 +191,14 @@ export class ProductInformationComponent implements OnInit {
     } else {
       this.checkoutService.copoCheckout(this.order).subscribe(
         data => {
-          this.serviceImagePath = "http://cdn.camisapersonalizadas.com.br/images/icon/success.png";
+          this.serviceImagePath = "https://cdn.camisapersonalizadas.com.br/images/icon/success.png";
           this.serviceMessage = "Seu orçamento foi solicitado com sucesso! Em instantes entraremos em contato com você.";
           this.redirectAfterBudgetUrl = '/';
           (document.querySelector('.close') as HTMLElement).click();
           this.openConfirmCheckoutModal(this.confirmModal);
           this.isLoadingModal = false;
         }, error => {
-          this.serviceImagePath = "http://cdn.camisapersonalizadas.com.br/images/icon/warning.png";
+          this.serviceImagePath = "https://cdn.camisapersonalizadas.com.br/images/icon/warning.png";
           this.serviceMessage = "Infelizmente o nosso sistema se encontra indisponível no momento! Tente novamente mais tarde.";
           this.redirectAfterBudgetUrl = '/produto-info';
           (document.querySelector('.close') as HTMLElement).click();

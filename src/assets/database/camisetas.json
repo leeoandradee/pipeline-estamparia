@@ -9,13 +9,13 @@
             "sexo" : "unisex",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-azul-marinho.png",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-cinza-mescla.png",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-marrom.png",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-verde-limão.jpg", 
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-verde-musgo.png", 
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-vinho.png",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-cores.png" 		 
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-azul-marinho.png",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-cinza-mescla.png",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-marrom.png",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-verde-limão.jpg", 
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-verde-musgo.png", 
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-vinho.png",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/camisetas-basica/camiseta-basica-cores.png" 		 
 
             ]
         },
@@ -28,10 +28,10 @@
             "sexo" : "unisex",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v/gola-v-amarela.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v/gola-v-laranja.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v/gola-v-verde.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v/gola-v-vermelha.jpg"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v/gola-v-amarela.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v/gola-v-laranja.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v/gola-v-verde.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v/gola-v-vermelha.jpg"
             ]
         },
         {
@@ -43,9 +43,9 @@
             "sexo" : "unisex",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/basica-juvenil/basica-juvenil-laranja.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/basica-juvenil/basica-juvenil-rosa.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/basica-juvenil/basica-juvenil-rosa-claro.jpg"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/basica-juvenil/basica-juvenil-laranja.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/basica-juvenil/basica-juvenil-rosa.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/basica-juvenil/basica-juvenil-rosa-claro.jpg"
             ]
         },
         {
@@ -57,10 +57,10 @@
             "sexo" : "masculino",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/masculina/polo-piquet-laranja.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/masculina/polo-piquet-azul.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/masculina/polo-piquet-verde.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/masculina/polo-piquet-vermelha.jpg"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/masculina/polo-piquet-laranja.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/masculina/polo-piquet-azul.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/masculina/polo-piquet-verde.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/masculina/polo-piquet-vermelha.jpg"
             ]
         },
         {
@@ -72,10 +72,10 @@
             "sexo" : "feminina",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-salmao.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-amarela.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-azul.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-rosa.jpg"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-salmao.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-amarela.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-azul.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-rosa.jpg"
             ]
         },
         {
@@ -87,10 +87,10 @@
             "sexo" : "Feminina",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/redonda/baby-look-gola-redonda-amarela.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/redonda/baby-look-gola-redonda-preta.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/redonda/baby-look-gola-redonda-roxo.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/redonda/baby-look-gola-redonda-salmao.jpg"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/redonda/baby-look-gola-redonda-amarela.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/redonda/baby-look-gola-redonda-preta.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/redonda/baby-look-gola-redonda-roxo.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/redonda/baby-look-gola-redonda-salmao.jpg"
             ]
         },
         {
@@ -102,9 +102,9 @@
             "sexo" : "feminina",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/v/baby-look-gola-v-azul.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/v/baby-look-gola-v-salmao.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/v/baby-look-gola-v-vermelho.jpg"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/v/baby-look-gola-v-azul.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/v/baby-look-gola-v-salmao.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/v/baby-look-gola-v-vermelho.jpg"
             ]
         },
         {
@@ -116,9 +116,9 @@
             "sexo" : "unisex",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/manga-longa/manga-longa-vermelho.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/manga-longa/manga-longa-azul.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/manga-longa/manga-longa-verde.jpg"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/manga-longa/manga-longa-vermelho.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/manga-longa/manga-longa-azul.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/manga-longa/manga-longa-verde.jpg"
             ]
         },
         {
@@ -130,9 +130,9 @@
             "sexo" : "unisex",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata/infantil/regata-infantil-amarela.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata/infantil/regata-infantil-azul.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata/infantil/regata-infantil-vermelha.jpg"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata/infantil/regata-infantil-amarela.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata/infantil/regata-infantil-azul.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata/infantil/regata-infantil-vermelha.jpg"
             ]
         },
         {
@@ -144,9 +144,9 @@
             "sexo" : "masculino",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata/masculina/redonda/regata-masculina-vermleha.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata/masculina/redonda/regata-masculina-verde.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata/masculina/redonda/regata-masculina-laranja.jpg"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata/masculina/redonda/regata-masculina-vermleha.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata/masculina/redonda/regata-masculina-verde.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata/masculina/redonda/regata-masculina-laranja.jpg"
             ]
         },
         {
@@ -158,10 +158,10 @@
             "sexo" : "unisex",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/basica-gola-careca/basica-gola-careca-malha-fria-azul.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/basica-gola-careca/basica-gola-careca-malha-fria-azul-marinho.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/basica-gola-careca/basica-gola-careca-malha-fria-cinza.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/basica-gola-careca/basica-gola-careca-malha-fria-preta.jpg"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/basica-gola-careca/basica-gola-careca-malha-fria-azul.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/basica-gola-careca/basica-gola-careca-malha-fria-azul-marinho.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/basica-gola-careca/basica-gola-careca-malha-fria-cinza.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/basica-gola-careca/basica-gola-careca-malha-fria-preta.jpg"
             ]
         },
         {
@@ -173,10 +173,10 @@
             "sexo" : "unisex",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v-algodao/gola-v-algodao-azul.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v-algodao/gola-v-algodao-azul-bb.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v-algodao/gola-v-algodao-cinza.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v-algodao/gola-v-algodao-rosa.jpg"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v-algodao/gola-v-algodao-azul.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v-algodao/gola-v-algodao-azul-bb.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v-algodao/gola-v-algodao-cinza.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/gola-v-algodao/gola-v-algodao-rosa.jpg"
             ]
         },
         {
@@ -188,10 +188,10 @@
             "sexo" : "unisex",
             "cores" : ["Branco"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/branca-poliester/branca-poliester-1.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/branca-poliester/branca-poliester-2.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/branca-poliester/branca-poliester-3.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/branca-poliester/branca-poliester-4.jpg"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/branca-poliester/branca-poliester-1.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/branca-poliester/branca-poliester-2.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/branca-poliester/branca-poliester-3.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/branca-poliester/branca-poliester-4.jpg"
             ]
         },
         {
@@ -203,12 +203,12 @@
             "sexo" : "feminina",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata-feminina/regata-feminina-amarela.png",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata-feminina/regata-feminina-pink.png",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata-feminina/regata-feminina-rosa-bb.png",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata-feminina/regata-feminina-roxa.png",
-		        "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata-feminina/regata-feminina-verde-limão.png",
-		        "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata-feminina/regata-feminina-cores.png"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata-feminina/regata-feminina-amarela.png",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata-feminina/regata-feminina-pink.png",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata-feminina/regata-feminina-rosa-bb.png",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata-feminina/regata-feminina-roxa.png",
+		        "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata-feminina/regata-feminina-verde-limão.png",
+		        "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata-feminina/regata-feminina-cores.png"
 	     ]
         },
         {
@@ -220,11 +220,11 @@
             "sexo" : "Masculina",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata-machao/regata-machao-azul-royal.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata-machao/regata-machao-cinza-mescla.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata-machao/regata-machao-preta.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata-machao/regata-machao-vermelha.jpg",
-		        "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata-machao/regata-machao-cores.png"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata-machao/regata-machao-azul-royal.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata-machao/regata-machao-cinza-mescla.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata-machao/regata-machao-preta.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata-machao/regata-machao-vermelha.jpg",
+		        "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata-machao/regata-machao-cores.png"
 		]
         },
         {
@@ -236,9 +236,9 @@
             "sexo" : "Masculina",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata-nadador/regata-nadador-amarela.png",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata-nadador/regata-nadador-azul-royal.png",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/regata-nadador/regata-nadador-vermelha.png"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata-nadador/regata-nadador-amarela.png",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata-nadador/regata-nadador-azul-royal.png",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/regata-nadador/regata-nadador-vermelha.png"
 		]
         },
         {
@@ -250,10 +250,9 @@
             "sexo" : "Masculina",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/moletom-fechado/moletom-fechado-branco.jpeg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/moletom-fechado/moletom-fechado-cinza-chumbo.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/moletom-fechado/moletom-fechado-preto.jpeg",
-		        "http://cdn.camisapersonalizadas.com.br//images/camisetas/moletom-fechado/moletom-fechado-vermelho.jpeg"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/moletom-fechado/moletom-fechado-preto.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/moletom-fechado/moletom-fechado-branco.jpg",
+		        "https://cdn.camisapersonalizadas.com.br//images/camisetas/moletom-fechado/moletom-fechado-vermelho.jpg"
 			]
         },
         {
@@ -265,11 +264,9 @@
             "sexo" : "Masculina",
             "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
             "imagens" : [
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/moletom-canguru/moletom-canguru-branco.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/moletom-canguru/moletom-canguru-cinza-mescla.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/moletom-canguru/moletom-canguru-preto.jpg",
-                "http://cdn.camisapersonalizadas.com.br//images/camisetas/moletom-canguru/moletom-canguru-vermelho.jpg",
-            	"http://cdn.camisapersonalizadas.com.br//images/camisetas/moletom-canguru/moletom-canguru-azul-royal.jpg"
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/moletom-canguru/moletom-canguru-preto.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/moletom-canguru/moletom-canguru-branco.jpg",
+            	"https://cdn.camisapersonalizadas.com.br//images/camisetas/moletom-canguru/moletom-canguru-azul-royal.jpg"
             ]
         }
     ]

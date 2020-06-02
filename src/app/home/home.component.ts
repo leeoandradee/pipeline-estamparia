@@ -8,7 +8,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 })
 export class HomeComponent implements OnInit, AfterViewInit {
 
-  bannerImages = ["http://cdn.camisapersonalizadas.com.br/images/banner-camiseta.jpg", "http://cdn.camisapersonalizadas.com.br/images/banner-canecas.jpg"];
+  bannerImages = ["https://cdn.camisapersonalizadas.com.br/images/banner-camiseta.jpg", "https://cdn.camisapersonalizadas.com.br/images/banner-canecas.jpg"];
 
   SlideOptions = { 
     items: 1, 
