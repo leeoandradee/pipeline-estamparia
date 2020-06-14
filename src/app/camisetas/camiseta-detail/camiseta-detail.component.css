@@ -159,6 +159,7 @@
         border-radius: 3px;
         padding: 8px;
         background-color: white;
+        background: white;
         border: solid 1px black;
     }
 
@@ -399,6 +400,7 @@
         padding: 6px;
         background-color: white;
         border: solid 1px black;
+        background: white;
     }
 
     #checkout-group {
@@ -628,6 +630,7 @@
         border-radius: 3px;
         padding: 6px;
         background-color: white !important;
+        background: white;
         border: solid 1px black;
     }
 

@@ -70,12 +70,27 @@
             "tamanhos" : ["P","M","G","EG"],
             "tecido" : "50% Algodão, 50% Poliéster",
             "sexo" : "feminina",
-            "cores" : ["Amarelo", "Azul", "Marinho", "Azul", "Royal", "Azul", "Turquesa", "Branco", "Cinza", "Claro", "Cinza", "Mescla"],
+            "cores" : ["Amarelo", "Azul", "Branco", "Cinza", "Cinza Claro", "Marinho", "Mescla", "Royal"],
             "imagens" : [
                 "https://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-salmao.jpg",
                 "https://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-amarela.jpg",
                 "https://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-azul.jpg",
                 "https://cdn.camisapersonalizadas.com.br//images/camisetas/polo-piquet/feminina/polo-piquet-feminina-rosa.jpg"
+            ]
+        },
+        {
+            "id" : "6",
+            "nome" : "Camiseta Baby Look Gola Redonda",
+            "modelo" : "Gola Redonda",
+            "tamanhos" : ["P","M","G","EG"],
+            "tecido" : "100% Algodão",
+            "sexo" : "Feminina",
+            "cores" : ["Amarelo", "Azul", "Branco", "Cinza", "Cinza Claro", "Marinho", "Mescla", "Royal"],
+            "imagens" : [
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/redonda/baby-look-gola-redonda-amarela.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/redonda/baby-look-gola-redonda-preta.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/redonda/baby-look-gola-redonda-roxo.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/camisetas/baby-look/redonda/baby-look-gola-redonda-salmao.jpg"
             ]
         }
     ],
@@ -106,6 +121,67 @@
             "imagens": [
                 "https://cdn.camisapersonalizadas.com.br//images/copos/copo-chantily/copo-chantily-translucidos.jpg",
                 "https://cdn.camisapersonalizadas.com.br//images/copos/copo-chantily/copo-chantily-leitosos.jpg"
+            ]
+        },
+        {
+            "id": "8",
+            "nome": "Taça Bordô 400ml ",
+            "cores": {
+                "degrade": [],
+                "leitosas": [
+                    "Branco",
+                    "preto",
+                    "Rosa"
+                ],
+                "metalica": [],
+                "neon": [],
+                "translucida": []
+            },
+            "imagens": [
+                "https://cdn.camisapersonalizadas.com.br//images/copos/taca-bordo/taca-bordo-cores.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/copos/taca-bordo/taca-bordo-branca.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/copos/taca-bordo/taca-bordo-preto.jpg"
+            ]
+        },
+        {
+            "id": "12",
+            "nome": "Caneca de chopp 350ml 500ml ",
+            "cores": {
+                "degrade": [
+                    "Branco com Laranja",
+                    "Branco Com Verde",
+                    "Branco com Azul",
+                    "Branco com Roxo",
+                    "Branco com Amarelo",
+                    "Branco com Vermelho",
+                    "Branco com Preto",
+                    " Transparente com Laranja",
+                    "Transparente Com Verde",
+                    "Transparente com Azul",
+                    "Transparente com Roxo",
+                    "Transparente com Amarelo",
+                    "Transparente com Vermelho",
+                    "Transparente com Preto",
+                    "Jateado com Laranja",
+                    "Jateado Com Verde",
+                    "Jateado com Azul",
+                    "Jateado com Roxo",
+                    "Jateado com Amarelo",
+                    "Jateado com Vermelho",
+                    "Jatedo com Preto"
+                ],
+                "leitosas": [
+                    "Branca"
+                ],
+                "metalica": [],
+                "neon": [],
+                "translucida": [
+                    "Transparente"
+                ]
+            },
+            "imagens": [
+                "https://cdn.camisapersonalizadas.com.br//images/copos/caneca-de-chopp/caneca-de-chopp-degrade.jpg",
+                "https://cdn.camisapersonalizadas.com.br//images/copos/caneca-de-chopp/caneca-de-chopp-cores.jpg"
             ]
         },
         {

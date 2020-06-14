@@ -46,7 +46,7 @@ type = "ball-clip-rotate"
         <div class="form-group">
             <label for="name">Nome *</label>
             <div class="input-group">
-                <input type="text" id="name" class="form-control" [class.is-invalid] = "budgetForm.get('name').invalid && budgetForm.get('name').touched" placeholder="Ex: Maria" name="name" formControlName="name">
+                <input type="text" id="name" class="form-control" [class.is-invalid] = "budgetForm.get('name').invalid && budgetForm.get('name').touched" placeholder="Ex: Maria" name="name" formControlName="name" autocomplete="firstName">
             </div>
             <div *ngIf="(name.invalid && name.touched) || name.dirty">
                 <small *ngIf="name.errors?.required" class="text-danger">O nome é obrigatório</small>
@@ -57,7 +57,7 @@ type = "ball-clip-rotate"
         <div class="form-group">
             <label for="lastName">Sobrenome *</label>
             <div class="input-group">
-                <input type="text" id="lastName" class="form-control" [class.is-invalid] = "budgetForm.get('lastName').invalid && budgetForm.get('lastName').touched" placeholder="Ex: Coutinho" name="lastName" formControlName="lastName">
+                <input type="text" id="lastName" class="form-control" [class.is-invalid] = "budgetForm.get('lastName').invalid && budgetForm.get('lastName').touched" placeholder="Ex: Coutinho" name="lastName" formControlName="lastName" autocomplete="lastName">
             </div>
             <div *ngIf="(lastName.invalid && lastName.touched) || lastName.dirty">
                 <small *ngIf="lastName.errors?.required" class="text-danger">O sobrenome é obrigatório</small>
@@ -68,7 +68,7 @@ type = "ball-clip-rotate"
         <div class="form-group">
             <label for="email">Email *</label>
             <div class="input-group">
-                <input type="email" id="email" class="form-control" [class.is-invalid] = "budgetForm.get('email').invalid && budgetForm.get('email').touched" placeholder="nome@exemplo.com" name="nome" formControlName="email" >
+                <input type="email" id="email" class="form-control" [class.is-invalid] = "budgetForm.get('email').invalid && budgetForm.get('email').touched" placeholder="nome@exemplo.com" name="nome" formControlName="email" autocomplete="home email">
             </div>
             <div *ngIf="(email.invalid && email.touched) || email.dirty">
                 <small *ngIf="email.errors?.required" class="text-danger">O email é obrigatório</small>
@@ -133,3 +133,9 @@ type = "ball-clip-rotate"
     </div>
 </ng-template>
 <!-- MODAL CONFIRM CHECKOUT -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511961949360"
+    class="whatsapp-link" target="_blank">
+    <i class="fa fa-whatsapp whatsapp-link-icon"></i>
+</a>

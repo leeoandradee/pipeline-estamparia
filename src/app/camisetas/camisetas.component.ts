@@ -19,6 +19,11 @@ export class CamisetasComponent implements OnInit, AfterViewInit {
   camisetas : any;
 
   ngOnInit() {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
     this.spinner.show();
     this.camisetas = camisetasData.camiseta;
   }

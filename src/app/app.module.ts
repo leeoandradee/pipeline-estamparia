@@ -27,6 +27,8 @@ import { CopoOfferComponent } from './product-offer/copo-offer/copo-offer.compon
 import { AmountComponent } from './amount/amount.component'; 
 import { SidebarModule } from 'ng-sidebar';
 import { CheckoutService } from './services/checkout-service/checkout-service.service';
+import { CamisetaHomeComponent } from './camisetas/camiseta-home/camiseta-home.component';
+import { CoposHomeComponent } from './copos/copos-home/copos-home.component';
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {}
 
@@ -46,6 +48,8 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {}
     CamisetaOfferComponent,
     CopoOfferComponent,
     AmountComponent,
+    CamisetaHomeComponent,
+    CoposHomeComponent,
   ],
   imports: [
     BrowserModule,
