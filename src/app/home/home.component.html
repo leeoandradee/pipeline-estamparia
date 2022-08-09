@@ -1,24 +1,79 @@
-<ngx-spinner bdOpacity=1.0 bdColor="#000000" size="large" color="#fff" type="ball-clip-rotate" [fullScreen]="true">
-    <p style="color: white"> carregando... </p>
+<ngx-spinner
+  bdOpacity="1.0"
+  bdColor="#000000"
+  size="large"
+  color="#fff"
+  type="ball-clip-rotate"
+  [fullScreen]="true"
+>
+  <p style="color: white">carregando...</p>
 </ngx-spinner>
 
 <app-menu></app-menu>
 
-<owl-carousel [options]="SlideOptions" [carouselClasses]="['owl-theme', 'sliding']" id="banner-container-box">
-    <div class="picsum-img-wrapper" *ngFor="let bannerImage of bannerImages" id="banner-container">
-        <img class="banner-image" src="{{bannerImage}}" alt="Random second slide">
+<div class="quem-somos-main-container">
+  <div class="quem-somos-container">
+    <img src="assets/empresa.png" class="empresa-logo" />
+    <div class="quem-somos-content">
+      <h2>Quem somos?</h2>
+      <p>
+        A Pipeline Estamparia surgiu em 2016 como uma pequena estamparia e com o
+        passar dos anos, fomos nos profissionalizando e focando na entrega
+        rápida e com qualidade de camisetas personalizadas.
+      </p>
+      <p>
+        Estamos prontos para atender qualquer demanda a partir de uma peça, com
+        as mais modernas técnicas de impressão nos mais diversos materiais e com
+        agilidade.
+      </p>
+      <p>
+        Hoje contamos com diversos tipos de camisetas e moletons que podem ser
+        usados na uniformização da sua empresa, na fidelização de clientes.
+        ações promocionais e até mesmo para presentear ou uso pessoal!
+      </p>
+      <p>
+        Com sua unidade na vila matilde zona leste de são paulo atendemos
+        presencial e online garantindo a entrega para todo pais: colsulte nossos
+        vendedores para auxiliá-lo a melhor solução das tecnicas de estampa para
+        sua demanda!
+      </p>
     </div>
-</owl-carousel>
+  </div>
+</div>
+
+<!-- <owl-carousel
+  [options]="SlideOptions"
+  [carouselClasses]="['owl-theme', 'sliding']"
+  id="banner-container-box"
+>
+  <div
+    class="picsum-img-wrapper"
+    *ngFor="let bannerImage of bannerImages"
+    id="banner-container"
+  >
+    <img
+      class="banner-image"
+      src="{{ bannerImage }}"
+      alt="Random second slide"
+    />
+  </div>
+</owl-carousel> -->
 
 <app-camiseta-home></app-camiseta-home>
-<app-copos-home></app-copos-home>
+<!-- <app-copos-home></app-copos-home> -->
 
 <!-- <app-product-offer [context]="'home'"></app-product-offer> -->
 
 <app-footer></app-footer>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511961949360"
-    class="whatsapp-link" target="_blank">
-    <i class="fa fa-whatsapp whatsapp-link-icon"></i>
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+/>
+<a
+  href="http://api.whatsapp.com/send?1=pt_BR&phone=5511961949360"
+  class="whatsapp-link"
+  target="_blank"
+>
+  <i class="fa fa-whatsapp whatsapp-link-icon"></i>
 </a>
