@@ -1,35 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body{
-    margin: 0;
+html,
+body {
+  margin: 0;
 }
 
-.modal-dialog{
-    animation-name: example;
-    animation-duration: 0.3s;
+body {
+  padding: env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px)
+    env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
+}
+
+.modal-dialog {
+  animation-name: example;
+  animation-duration: 0.3s;
 }
 
 @keyframes example {
-    0%   {transform: scale(0.5)}
-    75%  {transform: scale(1.1)}
-    100% {transform: scale(1)}
+  0% {
+    transform: scale(0.5);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-.whatsapp-link{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+.whatsapp-link {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
 }
 
-.whatsapp-link-icon{
-	margin-top:16px;
+.whatsapp-link-icon {
+  margin-top: 16px;
 }
