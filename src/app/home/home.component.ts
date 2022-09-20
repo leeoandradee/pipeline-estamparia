@@ -1,34 +1,32 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { NgxSpinnerService } from 'ngx-spinner';
+import { Component, OnInit, AfterViewInit } from "@angular/core";
+import { NgxSpinnerService } from "ngx-spinner";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  selector: "app-home",
+  templateUrl: "./home.component.html",
+  styleUrls: ["./home.component.css"],
 })
 export class HomeComponent implements OnInit, AfterViewInit {
+  bannerImages = [
+    "https://cdn.camisapersonalizadas.com.br/images/banner-camiseta.jpeg",
+  ];
 
-  bannerImages = ["https://cdn.camisapersonalizadas.com.br/images/banner-camiseta.jpg", "https://cdn.camisapersonalizadas.com.br/images/banner-canecas.jpg"];
+  SlideOptions = {
+    items: 1,
+    dots: true,
+    autoplay: true,
+    loop: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+  };
 
-  SlideOptions = { 
-    items: 1, 
-    dots: true, 
-    autoplay:true,
-    loop:true,
-    autoplayTimeout:4000,
-    autoplayHoverPause:true
-  } 
-
-
-  constructor(
-    private spinner: NgxSpinnerService
-  ) { }
+  constructor(private spinner: NgxSpinnerService) {}
 
   ngOnInit() {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
     this.spinner.show();
   }
@@ -36,5 +34,4 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.spinner.hide();
   }
-
 }

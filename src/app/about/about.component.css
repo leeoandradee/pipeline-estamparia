@@ -1,0 +1,64 @@
+.quem-somos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.empresa-logo {
+  width: 70%;
+  margin: 2rem 0;
+}
+
+.quem-somos-main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.quem-somos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .quem-somos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    width: 70%;
+  }
+
+  .empresa-logo {
+    width: 30%;
+  }
+
+  .quem-somos-main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .quem-somos-content {
+    width: 60%;
+  }
+}

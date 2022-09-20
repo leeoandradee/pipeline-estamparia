@@ -30,6 +30,7 @@ import { CheckoutService } from "./services/checkout-service/checkout-service.se
 import { CamisetaHomeComponent } from "./camisetas/camiseta-home/camiseta-home.component";
 import { CoposHomeComponent } from "./copos/copos-home/copos-home.component";
 import { ServicePageComponent } from "./service-page/service-page.component";
+import { AboutComponent } from "./about/about.component";
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
 
@@ -52,6 +53,7 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
     CamisetaHomeComponent,
     CoposHomeComponent,
     ServicePageComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
